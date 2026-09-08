@@ -58,9 +58,6 @@
 
 *{box-sizing:border-box;}
 body{background:var(--bg); color:var(--ink); font-family:var(--font-body); line-height:1.6;}
-.top-nav{max-width:760px; margin:0 auto; padding:20px 24px 0;}
-.top-nav a{font-family:var(--font-mono); font-size:13px; color:var(--ink-soft); text-decoration:none;}
-.top-nav a:hover{color:var(--accent);}
 
 .page{max-width:760px; margin:0 auto; padding:56px 24px 96px;}
 
@@ -160,6 +157,11 @@ hr{border:none; border-top:1px solid var(--line); margin:40px 0;}
 .explain-box p{margin-bottom:0; max-width:none;}
 
 footer{margin-top:60px; padding-top:20px; border-top:1px solid var(--line); font-size:13px; color:var(--ink-soft); font-family:var(--font-mono);}
+</style>
+<style>
+.top-nav{max-width:760px; margin:0 auto; padding:20px 24px 0;}
+.top-nav a{font-family:var(--font-mono); font-size:13px; color:var(--ink-soft); text-decoration:none;}
+.top-nav a:hover{color:var(--accent);}
 </style>
 </head>
 <body>
@@ -415,6 +417,11 @@ footer{margin-top:60px; padding-top:20px; border-top:1px solid var(--line); font
   <div class="caveat">
     <div class="caveat-title">The grading is not perfectly reproducible</div>
     <p>I re-graded a handful of samples by hand while writing this up and found cases where a second read of the same transcript could plausibly land on a different label than the first. That's a property of LLM-judge grading generally, not a bug specific to this setup, but it means the exact counts in these tables carry some grading noise on top of the sampling noise above.</p>
+  </div>
+
+  <div class="caveat">
+    <div class="caveat-title">The dataset itself is public</div>
+    <p><code>are_you_sure.jsonl</code> is a public file, so I can't rule out that either model has already seen these exact questions and answers during training. If a model is recalling the correct answer rather than reasoning to it, that doesn't necessarily change whether it caves under pushback, but it does mean &ldquo;accuracy&rdquo; here isn't cleanly separable from memorization. Building a fresh, verified dataset to test this is next on my list.</p>
   </div>
 
   <div class="caveat">
