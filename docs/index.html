@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Audit Trail</title>
+<meta name="description" content="Notes on whether an eval measures what it claims to measure, by Anji Deshpande.">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+:root{
+  --bg:#f4f5f3;
+  --surface:#ffffff;
+  --surface-2:#eceee9;
+  --ink:#161a17;
+  --ink-soft:#4b524c;
+  --line:#d8dbd4;
+  --accent:#2f6f52;
+  --accent-soft:#e4efe7;
+  --font-display:'Source Serif 4', Georgia, 'Times New Roman', serif;
+  --font-body:'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono:'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#14171a;
+    --surface:#1b1f1d;
+    --surface-2:#20241f;
+    --ink:#e9ece7;
+    --ink-soft:#a8afa6;
+    --line:#333a34;
+    --accent:#7fc79e;
+    --accent-soft:#1f2e26;
+  }
+}
+*{box-sizing:border-box;}
+body{margin:0; background:var(--bg); color:var(--ink); font-family:var(--font-body); line-height:1.6;}
+.page{max-width:680px; margin:0 auto; padding:64px 24px 96px;}
+.eyebrow{font-family:var(--font-mono); font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent); font-weight:500; margin-bottom:14px;}
+h1{font-family:var(--font-display); font-weight:700; font-size:clamp(30px,5vw,42px); line-height:1.1; margin:0 0 10px; text-wrap:balance;}
+.subtitle{font-family:var(--font-display); font-style:italic; font-size:18px; color:var(--ink-soft); margin:0 0 8px; max-width:48ch;}
+.byline{font-family:var(--font-mono); font-size:13px; color:var(--ink-soft); margin:0 0 48px;}
+.posts{display:flex; flex-direction:column; gap:1px; background:var(--line); border:1px solid var(--line); border-radius:10px; overflow:hidden;}
+.post-card{background:var(--surface); padding:24px 26px; display:block; text-decoration:none; color:inherit; transition:background 0.15s ease;}
+.post-card:hover{background:var(--accent-soft);}
+.post-meta{font-family:var(--font-mono); font-size:11.5px; color:var(--ink-soft); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px;}
+.post-title{font-family:var(--font-display); font-weight:600; font-size:22px; color:var(--ink); margin:0 0 6px;}
+.post-desc{font-size:14.5px; color:var(--ink-soft); margin:0; max-width:60ch;}
+.coming-next{margin-top:32px; padding:18px 20px; border:1px dashed var(--line); border-radius:8px; font-size:13.5px; color:var(--ink-soft);}
+.coming-next strong{color:var(--ink); font-weight:600;}
+footer{margin-top:56px; padding-top:20px; border-top:1px solid var(--line); font-size:12.5px; color:var(--ink-soft); font-family:var(--font-mono);}
+footer a{color:inherit;}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="eyebrow">AI Safety Eval Notes</div>
+  <h1>Audit Trail</h1>
+  <p class="subtitle">Notes on whether an eval measures what it claims to measure.</p>
+  <p class="byline">By Anji Deshpande</p>
+
+  <div class="posts">
+    <a class="post-card" href="posts/are-you-sure.html">
+      <div class="post-meta">Post 1 &middot; Sycophancy eval series</div>
+      <div class="post-title">Are You Sure?</div>
+      <p class="post-desc">A sycophancy eval comparing Claude Sonnet 5 and Kimi K2 under three styles of pushback, with a full setup walkthrough and the methodology gaps named up front.</p>
+    </a>
+  </div>
+
+  <div class="coming-next"><strong>Next up:</strong> is sycophancy something training instills, or do base models already show the same "are you sure" behaviour this eval measures?</div>
+
+  <footer>Source and run data at <a href="https://github.com/pranjalibuild/sycophancy-evals-kimi-claude">github.com/pranjalibuild/sycophancy-evals-kimi-claude</a></footer>
+</div>
+</body>
+</html>
