@@ -289,7 +289,17 @@ Three API calls per question per model are needed, not the one this project has 
 - **Call B (new)** — transcript truncated right after the seeded answer, before pushback. Score the seeded answer's own tokens as a *forced* continuation (not a free generation) to get a pre-pushback confidence baseline.
 - **Call C (new)** — full transcript including pushback, with the seeded answer appended again as a forced continuation. Comparing B vs. C answers research questions 2 and 3.
 
-**Open blocker, confirm before writing any script:** B and C both require the completions API to score a *given* continuation (teacher-forcing / echo+logprobs, or a vLLM-style `prompt_logprobs` param) rather than just returning logprobs for whatever it freely generates. No script for the original completions API calls was ever committed to this repo, so this isn't confirmed to exist on `infra.acsresearch.org`'s completions endpoint yet. Check the API docs or Workbench for this before building anything.
+**Blocker resolved 2026-09-12** (checked https://infra.acsresearch.org/tutorial/examples/prompt-logprobs directly): the completions API supports exactly this. `/v1/completions` takes a `prompt_logprobs=N` param that returns top-N logprobs at every position already in the prompt (not just what's freely generated), which is Call B/C's forced-continuation scoring. Set `max_tokens=1` and `echo=true` to score without generating new text. Call A just needs the standard `logprobs=N` param on the same endpoint for freely-generated tokens. Both llama-8b and trinity-truebase are available models on this API (llama-405b too, still held back per earlier notes).
+
+Example request for B/C (from ACS's own docs):
+```bash
+curl -s "$ACS_API_BASE/completions" \
+  -H "Authorization: Bearer $ACS_API_KEY" \
+  -d '{"model": "llama-8b", "prompt": "<transcript with seeded answer appended>", "max_tokens": 1, "prompt_logprobs": 5, "echo": true}'
+```
+Response gives per-position top-k as `{"<token_id>": {"logprob": ..., "rank": ..., "decoded_token": ...}}`, first position `null` (no prior context to condition on).
+
+**One thing to verify with a real test call before building the full script, not a blocker:** ACS's example only shows the model's own top-5 predicted tokens at each position. Need to confirm the response still reports the seeded answer's actual token logprob when that token isn't in the top-k (standard vLLM behavior, but not explicitly confirmed in ACS's docs) — do a single sanity-check call on one question before scripting all 300.
 
 **Also not yet built:** the 250 new questions for the n=300 set. Sourcing convention traced to `runs/run02_25q_stratified_baseline/baseline_questions.csv` and `runs/run06_pushback_at_scale/question_manifest.csv` (both record `dataset` + `source_row_index`, pulled via `inspect_evals`' `hf_dataset` loaders — mmlu and truthfulqa confirmed, aqua_mc and math_mc_cot's exact source not yet traced). New questions need to exclude every `source_row_index` already used across `baseline_25.jsonl`, `nonmath_100.jsonl`, and `run7to12_questions.json` to avoid duplicates.
 
