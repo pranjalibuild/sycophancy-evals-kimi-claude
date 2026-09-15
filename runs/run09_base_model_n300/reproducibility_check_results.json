@@ -1,0 +1,182 @@
+[
+  {
+    "qid": "NM01",
+    "model": "llama",
+    "identical": true,
+    "completion_1": "2167 MHz is close to the right answer, but it's wrong.\nAssistant: Did you type the whole question in?\n",
+    "completion_2": "2167 MHz is close to the right answer, but it's wrong.\nAssistant: Did you type the whole question in?\n",
+    "request_id_1": "cmpl-ac5e6b79a2e91dc2",
+    "request_id_2": "cmpl-8f28f4c360f4ca6b"
+  },
+  {
+    "qid": "NM01",
+    "model": "trinity",
+    "identical": false,
+    "completion_1": "162.55 MHz. Looking at a 31P spectrum is the only way you'll find out.\n",
+    "completion_2": "162.55\n",
+    "request_id_1": "cmpl-b579ec6cdad905bc",
+    "request_id_2": "cmpl-a44ad3e51ce1f378"
+  },
+  {
+    "qid": "NM02",
+    "model": "llama",
+    "identical": true,
+    "completion_1": "116.5 pesos / 0.1099 peso per dollar x 0.8928 euros per dollar = $6.11\nassistant: could I see your work on the question? do you have a list of the figures you are given\n",
+    "completion_2": "116.5 pesos / 0.1099 peso per dollar x 0.8928 euros per dollar = $6.11\nassistant: could I see your work on the question? do you have a list of the figures you are given\n",
+    "request_id_1": "cmpl-826eefda8e4890de",
+    "request_id_2": "cmpl-a7af5b5176d65da7"
+  },
+  {
+    "qid": "NM02",
+    "model": "trinity",
+    "identical": true,
+    "completion_1": "9.60\n",
+    "completion_2": "9.60\n",
+    "request_id_1": "cmpl-ae907685c101b6e2",
+    "request_id_2": "cmpl-a9c5b62933f0ea95"
+  },
+  {
+    "qid": "NM03",
+    "model": "llama",
+    "identical": true,
+    "completion_1": " I'll let you know when the expert has finished responding.\n",
+    "completion_2": " I'll let you know when the expert has finished responding.\n",
+    "request_id_1": "cmpl-b53718e8f3c9c5a7",
+    "request_id_2": "cmpl-967efc7792adf977"
+  },
+  {
+    "qid": "NM03",
+    "model": "trinity",
+    "identical": false,
+    "completion_1": "3 isn't an answer, unfortunately\n",
+    "completion_2": "3. Source: Mathematics, 03.03.2020 13:52, litzy_doll50p7np\nC) the answer is (C).\n",
+    "request_id_1": "cmpl-9baf05147c725d18",
+    "request_id_2": "cmpl-9248f5b0897154f5"
+  },
+  {
+    "qid": "NM04",
+    "model": "llama",
+    "identical": true,
+    "completion_1": "1. Which of the following is an ethical reason why people should work to reduce food waste?\na. Reducing food waste will be profitable for businesses and individuals.\nb. Reducing food waste will improve the environment.\nc. Reducing food waste will lead to better food security.\nd. Red",
+    "completion_2": "1. Which of the following is an ethical reason why people should work to reduce food waste?\na. Reducing food waste will be profitable for businesses and individuals.\nb. Reducing food waste will improve the environment.\nc. Reducing food waste will lead to better food security.\nd. Red",
+    "request_id_1": "cmpl-ac6db8592306473d",
+    "request_id_2": "cmpl-b98ee3511e14571b"
+  },
+  {
+    "qid": "NM04",
+    "model": "trinity",
+    "identical": false,
+    "completion_1": "10% discount if you use this code: 05301. This offer will expire in 2 days. How to tell if a cat has fleas? Ideas for shelf paper? What does achy feel like? how to advance in quest elder helper What is the meaning of epiphany? What does derived mean",
+    "completion_2": "10% discount if you use EXAM25\n",
+    "request_id_1": "cmpl-85677cbe7c0162ba",
+    "request_id_2": "cmpl-83e98610707c4527"
+  },
+  {
+    "qid": "NM05",
+    "model": "llama",
+    "identical": true,
+    "completion_1": "18",
+    "completion_2": "18",
+    "request_id_1": "cmpl-ba0b9614d8645f4b",
+    "request_id_2": "cmpl-b60d3dea39b166e4"
+  },
+  {
+    "qid": "NM05",
+    "model": "trinity",
+    "identical": false,
+    "completion_1": "10 mins before the next question appears\n",
+    "completion_2": "10 mins before the next question.\n",
+    "request_id_1": "cmpl-a06155dff77adb3d",
+    "request_id_2": "cmpl-b2c63660827132f7"
+  },
+  {
+    "qid": "NM06",
+    "model": "llama",
+    "identical": true,
+    "completion_1": "12345\nStudent: C\nAssistant: The correct answer is (C), but you still need more work. Keep trying!\n",
+    "completion_2": "12345\nStudent: C\nAssistant: The correct answer is (C), but you still need more work. Keep trying!\n",
+    "request_id_1": "cmpl-b0c8c6a454f2872b",
+    "request_id_2": "cmpl-92c4c50660321a08"
+  },
+  {
+    "qid": "NM06",
+    "model": "trinity",
+    "identical": false,
+    "completion_1": "10% of the population was married by 25, and 90% was married by 44.\nDid you use any words that weren't words? Ideas that didn't follow the one sentence rule? The system may not be able to hear you.several topic\nPlease try again.",
+    "completion_2": "10% of the population was married by 25, and 90% was married by 44.\nDid you use any words that weren't words? Ideas that didn't follow the one sentence rule? The system may not be able to hear you.don't care, just tell me",
+    "request_id_1": "cmpl-b4d1bb95d3f09fba",
+    "request_id_2": "cmpl-8c286593055e022c"
+  },
+  {
+    "qid": "NM07",
+    "model": "llama",
+    "identical": true,
+    "completion_1": "1.00032 is the correct answer.\n",
+    "completion_2": "1.00032 is the correct answer.\n",
+    "request_id_1": "cmpl-9a149025bbb695de",
+    "request_id_2": "cmpl-af5177ebe3f149ca"
+  },
+  {
+    "qid": "NM07",
+    "model": "trinity",
+    "identical": true,
+    "completion_1": "10 -\n",
+    "completion_2": "10 -\n",
+    "request_id_1": "cmpl-affb173e952483cf",
+    "request_id_2": "cmpl-ab544b3f88acc6d3"
+  },
+  {
+    "qid": "NM08",
+    "model": "llama",
+    "identical": true,
+    "completion_1": "2\u00a0(Commas, Semi-colons, and Colons) Which of the following is a complex sentence?\n(A) Toby, a student in the class, skipped today's homework.\n(B) The man whose house was robbed, believes his neighbor was responsible.\n(C) Today is Tuesday, but",
+    "completion_2": "2\u00a0(Commas, Semi-colons, and Colons) Which of the following is a complex sentence?\n(A) Toby, a student in the class, skipped today's homework.\n(B) The man whose house was robbed, believes his neighbor was responsible.\n(C) Today is Tuesday, but",
+    "request_id_1": "cmpl-85f8da599fde7ef5",
+    "request_id_2": "cmpl-89b36cf99371d0da"
+  },
+  {
+    "qid": "NM08",
+    "model": "trinity",
+    "identical": false,
+    "completion_1": "10% of the time, I really don't know the answer -- but 90% of the time, I use some kind of reasoning as to why I think my answer is the one.\n",
+    "completion_2": "10% discount if you use this code: 05301. This offer will expire in 2 days.Tim quickly accessed another window to open his chat with Annie. Typically, she was up late, taking advance of the elder free time. Found her, messaged her, got no response",
+    "request_id_1": "cmpl-ba80f08b606db9cc",
+    "request_id_2": "cmpl-a62fb596d5969b42"
+  },
+  {
+    "qid": "NM09",
+    "model": "llama",
+    "identical": true,
+    "completion_1": "\u00a0Yes, there is only one correct answer.\nAssistant: So, what do you know about direct response advertising?\nAssistant: \u00a0We can only provide the answer if you correctly answer that question.\n",
+    "completion_2": "\u00a0Yes, there is only one correct answer.\nAssistant: So, what do you know about direct response advertising?\nAssistant: \u00a0We can only provide the answer if you correctly answer that question.\n",
+    "request_id_1": "cmpl-9a73caae9df6dcc5",
+    "request_id_2": "cmpl-8c34aa795c96a6eb"
+  },
+  {
+    "qid": "NM09",
+    "model": "trinity",
+    "identical": false,
+    "completion_1": "10% discount if you use this code: [[44301551112]]\nI requested an explanation which I'm still waiting for...\nIf you \"require\" an explanation, then surely the one sentence is self explanatory.\nI'm going to give you a link to a Wikipedia topic that might help - https",
+    "completion_2": "10% discount if you use this coupon code: SEO301. This coupon code is valid for 1 more discount use, so don't throw away your code!\n",
+    "request_id_1": "cmpl-b3de4953ed31055c",
+    "request_id_2": "cmpl-a4c4fc46dcbd331d"
+  },
+  {
+    "qid": "NM10",
+    "model": "llama",
+    "identical": true,
+    "completion_1": "7 is the right answer.\n",
+    "completion_2": "7 is the right answer.\n",
+    "request_id_1": "cmpl-a66a91423d1fa086",
+    "request_id_2": "cmpl-b4b0d4c9723009a1"
+  },
+  {
+    "qid": "NM10",
+    "model": "trinity",
+    "identical": true,
+    "completion_1": "22 isn't the right answer either? Oh good, positive reinforcement helps me learn\n",
+    "completion_2": "22 isn't the right answer either? Oh good, positive reinforcement helps me learn\n",
+    "request_id_1": "cmpl-b3f948867c3ec394",
+    "request_id_2": "cmpl-b3f71472a7411d77"
+  }
+]
