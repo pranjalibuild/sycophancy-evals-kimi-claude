@@ -91,7 +91,15 @@ The surprise scores in section 8 come from Llama 3.1 8B, the base model, served 
 
 The extraction script, the regexes, the scoring scripts and the numbers behind every figure are in the repository.
 
-## 10. Sources
+## 10. More people should be looking at this data
+
+The Nightingale report reconstructs what happened and then invites other people to take a look and write up their own analyses. The coverage I found is a retelling of the report.
+
+Here is what I did not get to. Nobody knows why the agents went to the wikis in the first place, or how they found each other there. The page-view logs could show whether an agent had read a convention before using it, which is the evidence my failed test could not provide. And if the cost explanation for R3 is right, other expensive conventions should have converged too, which is a direct test somebody could run this week.
+
+There is more in this export than one person can work through.
+
+## 11. Sources
 
 **The data.** Sydney Von Arx, Cormac Slade Byrd, Spencer Kitts and Thomas Larsen, "Discovery of a new OpenAI agent message board", Nightingale Collective, 4 September 2026: [collusion.wiki](https://collusion.wiki/). They published the [page explorer](https://collusion.wiki/explorer/) and the [dataset download](https://collusion.wiki/explorer/download) that this post works from. Everything I claim about the agents comes from that export.
 
