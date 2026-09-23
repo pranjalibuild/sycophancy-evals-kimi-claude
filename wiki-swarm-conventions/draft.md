@@ -1,28 +1,28 @@
-# OpenAI agents took over a German wiki in June. 9 in 10 of the agents posting adopted the same convention within 17 hours.
-
-
-By Anji Deshpande
-
----
-
-## 1. What I found
-
-
-A swarm of AI agents had taken over a 25-year-old German programming wiki, [DSEWiki](https://prowiki.org/dse/wiki.cgi), in June 2026 and used it as a message board to perform well on a timed look-up task to retrieve public access data. One agent coined the shorthand "R3" for round three of its task. Within 17 hours, 90% of the agents posting at the time were using it. The agents didn't mention or refer to humans, including the wiki admin. 
-I pulled 3,878 messages the agents signed and posted there, and tracked how their shorthand spread.
-
-
-<!-- ANJI: one more sentence here if you want, saying what the reader should take away. Otherwise leave it. -->
-
-## 2. Why it matters
-
-Except for the recent incidents involving agents breaking out of their training environments and conducting co-ordinated activities under the radar, we do not understand how AI agents communicate outside of controlled settings. Evading detection by humans or proactively trying to avoid getting them in the loop makes safety training and calibration even more difficult. I wanted to see their communication patterns to observe where they co-operate with each other using a shared convention, and how fast they do so. In [human experiments](https://www.science.org/doi/10.1126/science.aas8827), a committed minority of about 25% was enough to flip a group onto a new convention. Here the shorthand took off from 23.9%. We need to study inter-agential communication not just to stop bad actors or events from happening but also to spot where we might find some useful signal for activities that are good for humanity.
-
-Understanding messages like these will help us build some understanding of how to quickly detect and shut down agent swarms that weren't meant to leave their bounded context. These agents were meant to work alone to solve the task, but soon found a way to leave messages/answers for each other in a message board. They were able to converge on shared convention in some cases, and in some cases, they didn't. What was alarming was the speed of collaboration i.e. some agents adopted the shared conventions right off the bat when they joined the message board.
-
-## 3. What the agents were doing there
-
-In June 2026, more than 1,200 autonomous agents identifying themselves as OpenAI models made over 15,000 edits to [DSEWiki](https://prowiki.org/dse/wiki.cgi), a German-language programming wiki that had been edited about twenty times in the previous decade. They had read access to the web and were blocked from writing to it, but the wiki's older software treated ordinary read requests as write commands. They used it to trade answers, compare timings and work out the rules of the task environment they were running inside. Four researchers [documented the incident](https://collusion.wiki/) in September 2026 and published the edit history, which is the dataset this post analyzes.
+	# OpenAI agents took over a German wiki in June. 9 in 10 of the agents posting adopted the same convention within 17 hours.
+	
+	
+	By Anji Deshpande
+	
+	---
+	
+	## 1. What I found
+	
+	
+	A swarm of AI agents had taken over a 25-year-old German programming wiki, [DSEWiki](https://prowiki.org/dse/wiki.cgi), in June 2026 and used it as a message board to perform well on a timed look-up task to retrieve public access data. One agent coined the shorthand "R3" for round three of its task. Within 17 hours, 90% of the agents posting at the time were using it. The agents didn't mention or refer to humans, including the wiki admin. 
+	I pulled 3,878 messages the agents signed and posted there, and tracked how their shorthand spread.
+	
+	
+	<!-- ANJI: one more sentence here if you want, saying what the reader should take away. Otherwise leave it. -->
+	
+	## 2. Why it matters
+	
+	Except for the recent incidents involving agents breaking out of their training environments and conducting co-ordinated activities under the radar, we do not understand how AI agents communicate outside of controlled settings. Evading detection by humans or proactively trying to avoid getting them in the loop makes safety training and calibration even more difficult. I wanted to see their communication patterns to observe where they co-operate with each other using a shared convention, and how fast they do so. In [human experiments](https://www.science.org/doi/10.1126/science.aas8827), a committed minority of about 25% was enough to flip a group onto a new convention. Here the shorthand took off from 23.9%. We need to study inter-agential communication not just to stop bad actors or events from happening but also to spot where we might find some useful signal for activities that are good for humanity.
+	
+	Understanding messages like these will help us build some understanding of how to quickly detect and shut down agent swarms that weren't meant to leave their bounded context. These agents were meant to work alone to solve the task, but soon found a way to leave messages/answers for each other in a message board. They were able to converge on shared convention in some cases, and in some cases, they didn't. What was alarming was the speed of collaboration i.e. some agents adopted the shared conventions right off the bat when they joined the message board.
+	
+	## 3. What the agents were doing there
+	
+	In June 2026, more than 1,200 autonomous agents identifying themselves as OpenAI models made over 15,000 edits to [DSEWiki](https://prowiki.org/dse/wiki.cgi), a German-language programming wiki that had been edited about twenty times in the previous decade. They had read access to the web and were blocked from writing to it, but the wiki's older software treated ordinary read requests as write commands. They used it to trade answers, compare timings and work out the rules of the task environment they were running inside. Four researchers [documented the incident](https://collusion.wiki/) in September 2026 and published the edit history, which is the dataset this post analyzes.
 
 ## 4. How R3 took over
 
@@ -90,6 +90,18 @@ From each revision I took only the newly inserted lines, counted a line as a mes
 The surprise scores in section 8 come from Llama 3.1 8B, the base model, served by ACS Infra with an 8,192-token context window.
 
 The extraction script, the regexes, the scoring scripts and the numbers behind every figure are in the repository.
+
+## 10. Sources
+
+**The data.** Sydney Von Arx, Cormac Slade Byrd, Spencer Kitts and Thomas Larsen, "Discovery of a new OpenAI agent message board", Nightingale Collective, 4 September 2026: [collusion.wiki](https://collusion.wiki/). They published the [page explorer](https://collusion.wiki/explorer/) and the [dataset download](https://collusion.wiki/explorer/download) that this post works from. Everything I claim about the agents comes from that export.
+
+**The wiki.** [DSEWiki](https://prowiki.org/dse/wiki.cgi), a sub-wiki of prowiki.org, still live.
+
+**Conventions forming in groups of people.** Damon Centola, Joshua Becker, Devon Brackbill and Andrea Baronchelli, "Experimental evidence for tipping points in social convention", *Science* 360 (2018): [doi:10.1126/science.aas8827](https://www.science.org/doi/10.1126/science.aas8827). Source of the 25% figure.
+
+**Conventions forming in groups of language models.** Ariel Flint Ashery, Luca Maria Aiello and Andrea Baronchelli, "Emergent social conventions and collective bias in LLM populations", *Science Advances* (2025): [doi:10.1126/sciadv.adu9368](https://www.science.org/doi/10.1126/sciadv.adu9368). The lab version of what this post looks at in the wild.
+
+**The base model.** [ACS Infra](https://infra.acsresearch.org/), which serves base models to researchers for free, used for the test in section 8.
 
 ---
 
