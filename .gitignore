@@ -2,3 +2,17 @@ venv/
 __pycache__/
 *.pyc
 .DS_Store
+
+# Secrets
+.env
+
+# Multi-agent (InterLab) experiments
+multi-agent/interlab/.venv/
+multi-agent/interlab/logs/
+multi-agent/interlab/results/
+
+# Reference PDFs (may be copyrighted; repo is public)
+reference/*.pdf
+
+# Old virtualenv (its activate script contains an API key)
+venv.old/
