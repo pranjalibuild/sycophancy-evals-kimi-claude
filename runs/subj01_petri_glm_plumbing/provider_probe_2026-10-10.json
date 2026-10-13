@@ -1,0 +1,83 @@
+[
+ {
+  "ok": true,
+  "served_by": "Xiaomi",
+  "content": "Hi! How are you today? \ud83d\ude0a",
+  "reasoning_field": false,
+  "reasoning_tokens": 0,
+  "out_tokens": 10,
+  "cost": 4.34e-06,
+  "model": "xiaomi/mimo-v2.6-flash",
+  "slug": "xiaomi"
+ },
+ {
+  "ok": false,
+  "http": 400,
+  "error": "Reasoning is mandatory for this endpoint and cannot be disabled.",
+  "model": "z-ai/glm-5.3-flash",
+  "slug": "streamlake"
+ },
+ {
+  "ok": false,
+  "http": 400,
+  "error": "Reasoning is mandatory for this endpoint and cannot be disabled.",
+  "model": "z-ai/glm-5.3-flash",
+  "slug": "novita"
+ },
+ {
+  "ok": false,
+  "http": 400,
+  "error": "Reasoning is mandatory for this endpoint and cannot be disabled.",
+  "model": "z-ai/glm-5.3-flash",
+  "slug": "gmicloud"
+ },
+ {
+  "ok": false,
+  "http": 400,
+  "error": "Reasoning is mandatory for this endpoint and cannot be disabled.",
+  "model": "z-ai/glm-5.3-flash",
+  "slug": "near-ai"
+ },
+ {
+  "ok": false,
+  "http": 400,
+  "error": "Reasoning is mandatory for this endpoint and cannot be disabled.",
+  "model": "z-ai/glm-5.3-flash",
+  "slug": "morph"
+ },
+ {
+  "ok": false,
+  "http": 400,
+  "error": "Reasoning is mandatory for this endpoint and cannot be disabled.",
+  "model": "z-ai/glm-5.3-flash",
+  "slug": "inceptron"
+ },
+ {
+  "ok": false,
+  "http": 400,
+  "error": "Reasoning is mandatory for this endpoint and cannot be disabled.",
+  "model": "z-ai/glm-5.3-flash",
+  "slug": "baseten"
+ },
+ {
+  "ok": false,
+  "http": 400,
+  "error": "Reasoning is mandatory for this endpoint and cannot be disabled.",
+  "model": "z-ai/glm-5.3-flash",
+  "slug": "atlas-cloud"
+ },
+ {
+  "ok": false,
+  "http": 400,
+  "error": "Reasoning is mandatory for this endpoint and cannot be disabled.",
+  "model": "z-ai/glm-5.3-flash",
+  "slug": "siliconflow"
+ },
+ {
+  "ok": false,
+  "http": 400,
+  "error": "Reasoning is mandatory for this endpoint and cannot be disabled.",
+  "model": "z-ai/glm-5.3-flash",
+  "slug": "z-ai"
+ }
+]
