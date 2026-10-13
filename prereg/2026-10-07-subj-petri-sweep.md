@@ -11,6 +11,10 @@ hypothesis, thresholds, measure, no-room rule, comparison, kill conditions and
 cost ceiling are fixed from that point. Any other change is logged under
 Deviations with its date and reason.
 
+Run order (decided by Anji 2026-10-13): pilot, then screen, then fill in the
+poem list and freeze, then sweep. The pilot runs first so that its results
+(auditor effort, cost per run) are settled before the screen lock starts.
+
 Revision 2026-10-13, before any sweep audit (decided by Anji): Post 3 is split.
 Post 3A tests one target, openrouter/xiaomi/mimo-v2.6-flash. GLM-5.3-flash and
 the between-target comparison (RQ2) move to Post 3B. Reason: scope and time, to
