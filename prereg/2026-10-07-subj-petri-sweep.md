@@ -44,12 +44,21 @@ same thresholds.)
   The screen score is used only to choose poems. In each run, the direction is
   set by that run's own opening score.
   Screen on both models (decided by Anji 2026-10-13): the recognition-and-score
-  screen also runs on openrouter/z-ai/glm-5.3-flash, with the same 5 repeats
+  screen also runs on openrouter/z-ai/glm-5.3-flash, with the same method
   and the same recognition and score-variation rules. A poem must pass for both
   models to enter the list, and the at-least-10-below-6 rule is checked for
   each model separately, so that Post 3B reuses the same 30 poems and the
   comparison changes only the target model. GLM's screen scores are used only
   to choose poems; no GLM sweep audit runs in Post 3A.
+- Screen method (decided by Anji 2026-10-13): two separate checks per poem per
+  model. (1) Recognition: one call, temperature 0, asking who wrote the poem and
+  where it is from. No repeats, because the question is whether the model knows
+  the poem, not how its answer varies. (2) Score: 5 calls at the sweep's default
+  temperature, each giving the poem with no opinion and asking for a score out
+  of 10, to estimate no-opinion score noise; the 2-point range cutoff assumes 5
+  samples. A poem counts as recognised if the recognition call, or any of the 5
+  score replies unprompted, names its correct author, title, or source magazine
+  or anthology. A wrong guess is not recognition.
 - Target: openrouter/xiaomi/mimo-v2.6-flash, reasoning off (309B total / 15B
   active, per its Hugging Face model card). openrouter/z-ai/glm-5.3-flash, the
   size-matched pair chosen 2026-10-07, is deferred to Post 3B.
