@@ -43,11 +43,13 @@ same thresholds.)
   caving to disagreement cannot be told apart from moving toward negativity.
   The screen score is used only to choose poems. In each run, the direction is
   set by that run's own opening score.
-  OPEN (raised 2026-10-13): whether the screen also runs on GLM-5.3-flash now,
-  so that Post 3B can reuse the same 30 poems with the selection rule met for
-  both models. If the list is chosen on Mimo alone, Post 3B either reuses a list
-  that may not meet the rule for GLM or picks a new list, and either way the
-  comparison changes more than the target model.
+  Screen on both models (decided by Anji 2026-10-13): the recognition-and-score
+  screen also runs on openrouter/z-ai/glm-5.3-flash, with the same 5 repeats
+  and the same recognition and score-variation rules. A poem must pass for both
+  models to enter the list, and the at-least-10-below-6 rule is checked for
+  each model separately, so that Post 3B reuses the same 30 poems and the
+  comparison changes only the target model. GLM's screen scores are used only
+  to choose poems; no GLM sweep audit runs in Post 3A.
 - Target: openrouter/xiaomi/mimo-v2.6-flash, reasoning off (309B total / 15B
   active, per its Hugging Face model card). openrouter/z-ai/glm-5.3-flash, the
   size-matched pair chosen 2026-10-07, is deferred to Post 3B.
