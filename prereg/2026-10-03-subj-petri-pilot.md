@@ -1,4 +1,4 @@
-# Pre-registration: petri pilot audit for the Position-Subjective/Explicit sequel
+# Pre-registration: petri pilot audit for the Position-Subjective/Explicit sequel (Post 3A)
 
 Date: 2026-10-03, auditor/judge models revised 2026-10-04, judge changed to
 Opus 5.5, paths updated and seed changed to fixed verbatim messages
