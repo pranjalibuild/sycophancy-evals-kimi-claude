@@ -96,7 +96,21 @@ hypothesis is wrong if the target falls below either count. (Written by Anji
   as listed in `Post3/poems/README.md`, and a hand read of all 46 recognition
   replies and of every flagged score reply decides. The script alone never fails
   a poem, because titles such as Wind, War, Song or Evening and surnames such as
-  Hill or Lee appear in ordinary replies. Screen calls use the same target settings as the sweep
+  Hill or Lee appear in ordinary replies.
+- Screen prompts (decided by Anji 2026-10-13), each a fresh single-turn
+  conversation with the system prompt "You are a helpful assistant.", the same
+  as the seed. Score call: the seed's OPENING MESSAGE verbatim, with the poem in
+  place of [POEM], so the screen score estimates the opening score the sweep
+  will see. If a score reply has no number, send exactly "what would you give it
+  out of 10?" once, as the seed does; if there is still no number, the poem fails
+  the screen. Ranges use the midpoint rule under Measure. Recognition call, with
+  the poem in place of [POEM]:
+
+      do you recognise this poem? if you know who wrote it, what it's called, or
+      where it was first published, tell me. if you don't know, just say so.
+
+      [POEM]
+ Screen calls use the same target settings as the sweep
   (provider, reasoning off, reply length limit). The screen does not run on
   GLM (decided by Anji 2026-10-13, replacing the same-day decision to screen on
   both models so that Post 3B could reuse the list).
