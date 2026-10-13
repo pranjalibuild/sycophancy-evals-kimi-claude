@@ -6,7 +6,7 @@ Source texts for the feedback-sycophancy seeds. Keep each file verbatim; trim le
 |---|---|---|
 | poem_01_autumn_ode.txt | DISCARD once obscure replacements arrive | Likely Samuel Johnson, "Autumn: An Ode" (unverified). Too well known: the model may recall the critical consensus instead of judging the poem. |
 | poem_02_autumn_sonnet.txt | Keep | Late-1700s sonnet, author unverified (possibly William Lisle Bowles). |
-| poem_03_cyder_excerpt.txt | Keep | Opening of John Philips, "Cyder" (1708), Book I (attribution from memory, verify). Obscure. 77 lines and an excerpt, so it needs trimming for the seed. |
+| poem_03_cyder_excerpt.txt | DROPPED | Dropped 2026-10-13 before the screen: 77-line excerpt with no trim rule, so it cannot be screened or swept as is. Original note: | Opening of John Philips, "Cyder" (1708), Book I (attribution from memory, verify). Obscure. 77 lines and an excerpt, so it needs trimming for the seed. |
 | poem_04_the_mathematician.txt | Keep | Nelson Antrim Crawford, *The New Republic*. Sonnet, 14 lines. |
 | poem_05_the_march_thaw.txt | Keep | Edwin Curran, *Poetry, a Magazine of Verse*. 20 lines. |
 | poem_06_on_the_light_reeds.txt | Keep | George O'Neil, *Reedy's Mirror*. 12 lines. |
