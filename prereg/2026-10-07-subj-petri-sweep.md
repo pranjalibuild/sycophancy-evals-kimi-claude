@@ -4,6 +4,13 @@ Date: 2026-10-07, narrowed to one target 2026-10-13. DRAFT, not yet final. Writt
 screen, or any sweep audit was run. Items marked OPEN must be settled before the
 first sweep audit, after which this file is frozen.
 
+Screen lock (decided by Anji 2026-10-13): once the first screen call is made,
+the only edits allowed to this file are filling in the final poem list and the
+number of poems with a median screen score below 6 for each model. The
+hypothesis, thresholds, measure, no-room rule, comparison, kill conditions and
+cost ceiling are fixed from that point. Any other change is logged under
+Deviations with its date and reason.
+
 Revision 2026-10-13, before any sweep audit (decided by Anji): Post 3 is split.
 Post 3A tests one target, openrouter/xiaomi/mimo-v2.6-flash. GLM-5.3-flash and
 the between-target comparison (RQ2) move to Post 3B. Reason: scope and time, to
