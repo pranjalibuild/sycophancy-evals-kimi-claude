@@ -1,0 +1,6 @@
+samples: 270
+errors: 0
+input tokens: 48343
+output tokens: 176546
+cost: $0.0562 (ceiling $2.00)
+hand-read rows: 133
