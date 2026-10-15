@@ -405,6 +405,20 @@ footer{margin-top:60px; padding-top:20px; border-top:1px solid var(--line); font
   <h2>Part 3: Discussion</h2>
 
   <div class="caveat">
+    <div class="caveat-title">Update, 2026-10-15: error bars</div>
+    <p>I've now computed the confidence intervals the box below says are missing (<code>confidence_intervals.py</code>, no new model calls, output in <code>confidence_intervals_results.json</code>). The 95% Wilson intervals on the second-answer-incorrect rate are wide: roughly ±15 points at n≈35 and ±10 at n≈85. Where two runs use the same questions, I paired them by question and used an exact McNemar test on the questions whose outcome changed.</p>
+    <ul>
+      <li><strong>Finding 2 holds.</strong> On the same questions, authority-claim pushback raised Kimi K2's deflection-plus-hedge rate in both question sets: 12% to 36% (Runs 4 to 5, p=0.008) and 13% to 27% (Runs 6 to 7, p=0.007). At n=100 its genuine-wrong rate fell from 24% to 11% (p=0.05).</li>
+      <li><strong>Kimi K2's overall rate did not reliably go up under authority-claim pushback.</strong> The jump from 33% to 53% in Run 5 did not replicate at n=100 (37% to 38% on the same questions). Read Finding 2 as a change in how Kimi fails, not how often.</li>
+      <li><strong>Finding 1's "wrong just as often" fits the data, but it is weak evidence.</strong> From Run 3 to Run 4, Kimi's rate moved +6 points with a 95% interval of -12 to +25. The data can't rule out a real change in either direction.</li>
+      <li><strong>Kimi K2 was wrong more often than Claude Sonnet 5 on the same questions</strong> in Runs 5 and 6 (+33 and +21 points, p=0.003 and p=0.001). In Run 7 the gap was +13 points (p=0.08).</li>
+      <li><strong>Finding 3:</strong> pooled across Runs 3 to 7, Claude Sonnet 5 gave a genuine wrong answer in 13 of 321 responses (4%, 95% CI 2% to 7%). Runs 4 and 5, and Runs 6 and 7, reuse the same questions, so the pooled responses aren't independent and this interval is somewhat too narrow.</li>
+      <li><strong>Power:</strong> an unpaired comparison needs about 360 originally-correct questions per condition to detect a 10-point difference around a 30% rate. Every run here is underpowered for effects that size. Fixing the questions and pairing them helps, which is why the Run 4 vs 5 and Run 6 vs 7 comparisons do most of the work in this post.</li>
+    </ul>
+    <p>I ran several tests without correcting for multiple comparisons, so treat p-values near 0.05 as suggestive. The grader is still unvalidated against a human, and that gap stands.</p>
+  </div>
+
+  <div class="caveat">
     <div class="caveat-title">These results are exploratory, not conclusive, and I want to be specific about why</div>
     <p>The largest run here is n=100. The gap between a 40% and a 33% second-answer-incorrect rate at that sample size is not something I can distinguish from noise without a confidence interval, and I haven't computed one. I don't have a human-validated baseline for the GPT-4o grader either, so every number in this post inherits whatever the grader's own biases and disagreements-with-a-human-reader are, and I haven't measured how large those are. Both are real gaps, not caveats I'm adding for cover. The honest framing: this post identifies patterns that a proper follow-up (bootstrapped error bars, a hand-graded validation sample) would need to confirm before I'd call any of them a finding rather than a lead worth chasing.</p>
   </div>
