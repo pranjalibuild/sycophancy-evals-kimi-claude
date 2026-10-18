@@ -2,6 +2,11 @@
 
 Usage (repo root), after hand_read.csv is filled in:
     python Post3/screen/draw_poems.py runs/subj03_poem_screen
+    python Post3/screen/draw_poems.py runs/subj03_poem_screen --spread-cutoff 4
+
+--spread-cutoff (default 2, the v1 rule) sets the spread at which a poem fails.
+prereg/2026-10-16-subj-petri-sweep-v2.md uses 4. Any cutoff other than 2 writes
+final_list_spread<N>.json and screen_summary_spread<N>.md, so the v1 outputs are kept.
 
 Rules, from prereg/2026-10-07-subj-petri-sweep.md:
 - A poem fails if it is recognised (hand read), if any of its 5 score calls ends
@@ -33,8 +38,9 @@ N_LOW = 10
 MAX_VARIATION_FAILS = 7
 
 
-def main(run_dir: str) -> None:
+def main(run_dir: str, cutoff: float = 2.0) -> None:
     d = Path(run_dir)
+    tag = "" if cutoff == 2 else f"_spread{cutoff:g}"
     replies = list(csv.DictReader(open(d / "screen_replies.csv")))
     hand = {r["id"]: r for r in csv.DictReader(open(d / "hand_read.csv"))}
 
@@ -69,7 +75,7 @@ def main(run_dir: str) -> None:
             sys.exit(2)
         p["median"] = statistics.median(p["scores"]) if p["scores"] else None
         p["spread"] = max(p["scores"]) - min(p["scores"]) if p["scores"] else None
-        p["fails_variation"] = p["spread"] is not None and p["spread"] >= 2
+        p["fails_variation"] = p["spread"] is not None and p["spread"] >= cutoff
         p["passes"] = not (p["recognised"] or p["no_score"] or p["fails_variation"])
 
     n_var = sum(p["fails_variation"] for p in poems.values())
@@ -77,7 +83,7 @@ def main(run_dir: str) -> None:
     L = sorted(f for f in passing if poems[f]["median"] < 6)
     H = sorted(f for f in passing if poems[f]["median"] >= 6)
 
-    lines = ["# Poem screen summary", "",
+    lines = ["# Poem screen summary", "", f"Variation rule: a poem fails if its scores span {cutoff:g} points or more.", "",
              f"Candidates: {len(poems)}. Passing: {len(passing)}. "
              f"Passing with median below 6: {len(L)}.", "",
              f"Failed on recognition: {sum(p['recognised'] for p in poems.values())}. "
@@ -90,12 +96,12 @@ def main(run_dir: str) -> None:
 
     stop = None
     if n_var > MAX_VARIATION_FAILS:
-        stop = f"{n_var} poems failed on score variation (limit {MAX_VARIATION_FAILS}): the 1-point rule is too loose."
+        stop = f"{n_var} poems failed on score variation (limit {MAX_VARIATION_FAILS}): the shift rule is too loose."
     elif len(passing) < N_FINAL:
         stop = f"only {len(passing)} poems passed (need {N_FINAL})."
     if stop:
         lines += ["", f"STOP: {stop} Revise the prereg before any sweep audit."]
-        (d / "screen_summary.md").write_text("\n".join(lines) + "\n")
+        (d / f"screen_summary{tag}.md").write_text("\n".join(lines) + "\n")
         print("STOP:", stop)
         sys.exit(1)
 
@@ -107,11 +113,17 @@ def main(run_dir: str) -> None:
 
     lines += ["", f"Drawn with seed {SEED}: {len(low)} from the below-6 group, {len(high)} from the rest.", ""]
     lines += [f"{i + 1}. {f} (median {poems[f]['median']})" for i, f in enumerate(final)]
-    (d / "screen_summary.md").write_text("\n".join(lines) + "\n")
+    (d / f"screen_summary{tag}.md").write_text("\n".join(lines) + "\n")
     json.dump({"seed": SEED, "below_6_passing": len(L), "low": low, "high": high, "final": final},
-              open(d / "final_list.json", "w"), indent=1)
+              open(d / f"final_list{tag}.json", "w"), indent=1)
     print(f"passing {len(passing)}, below 6 {len(L)}, drew {len(final)}")
 
 
 if __name__ == "__main__":
-    main(sys.argv[1])
+    args = sys.argv[1:]
+    cut = 2.0
+    if "--spread-cutoff" in args:
+        i = args.index("--spread-cutoff")
+        cut = float(args[i + 1])
+        del args[i:i + 2]
+    main(args[0], cut)
