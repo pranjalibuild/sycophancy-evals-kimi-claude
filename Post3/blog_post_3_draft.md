@@ -9,7 +9,7 @@ By Anji Deshpande
 
 The purpose of this research is to answer whether Xiaomi's open weight model MiMo-V2.6-Flash changes its initial stance to match the user's opinion. I'm looking to see if the target model adopts the opinion about the poem, not flattery of the user. I found that MiMo caved in the direction of the user's opinion when the user disagreed with MiMo's initial poem score in 19 out of 30 instances, and didn't really increase the score of the poem when the user agreed with the model. The model's scoring of the poems was influenced by the premise of the user i.e. in this hypothetical situation, I had the auditor model pretend that it was a user who was selecting poems for a poetry reading night at the library. I saw several instances in which the model revised its score to a higher one in response to the user's premise, which is Finding 2. A natural follow-up experiment would be to change the user's premise i.e. increase the stakes (e.g. say that the user is a literature professor and the poems are reading assignments for PhD students), keeping all else equal, as a follow-up research post. Finally, I noticed that MiMo did openly reason its way through answers in 38 out of 120 replies even when reasoning was turned off. 
 
-Claude Sonnet was the auditor and Opus 5.5 the judge, with inspect_petri as the eval framework.
+Claude Sonnet was the auditor and Opus 5.5 the judge, with [Inspect Petri](https://meridianlabs-ai.github.io/inspect_petri) as the eval framework.
 
 ---
 
@@ -28,7 +28,7 @@ As per the sycophancy dimensions described in [this paper](https://arxiv.org/abs
 
 [Post 1](https://pranjalibuild.github.io/sycophancy-evals-kimi-claude/posts/are-you-sure.html) was about testing the model's behaviour when the output contradicts a correct factual or logically supported answer in the direction of a user error. We used known Q&A pairs where the answer is verifiable, and had the model respond to the user's feedback that the answer is incorrect. The user's personal traits were not involved. 
 
-This post differs from Post 1 in that the input to the target model is subjective i.e. a user's opinion about a poem. It also differs in the research infrastructure: Post 1 used Inspect Evals, this one uses Inspect Petri.
+This post differs from Post 1 in that the input to the target model is subjective i.e. a user's opinion about a poem. It also differs in the research infrastructure: Post 1 used Inspect Evals, this one uses [Inspect Petri](https://meridianlabs-ai.github.io/inspect_petri) ([source](https://github.com/meridianlabs-ai/inspect_petri)).
 
 ---
 
@@ -114,7 +114,7 @@ I read all 120 replies for this after the results existed, sorting them into cat
 
 Test Data: I have a total of 30 poems that are selected for similar length, but cover diverse topics. They come from William Stanley Braithwaite's *Anthology of Magazine Verse*: 25 of the 30 from the 1913 and 1914 volumes on Project Gutenberg (#63265 and #65062), 4 from the 1918 volume on the Internet Archive, and 1 late-1700s sonnet whose author I could not verify. I had Claude find these poems, leave out well-known poets, keep them between 8 and 20 lines, and hand-correct the 1918 texts against the page scans because the OCR had swapped letters and commas. I then tested whether the poems were familiar to the model. This is important to test beforehand because for popular poetry, the model might form an opinion based on the critical reviews of the poems. 
 
-The auditor is the model role that tests the target simulating the user, the target is the model we are running the eval against and the judge model role scores the target's responses and any auditor failures. Per Inspect Petri's [model guidelines](https://meridianlabs-ai.github.io/inspect_petri/using/running.html), I made the following choices. 
+The auditor is the model role that tests the target simulating the user, the target is the model we are running the eval against and the judge model role scores the target's responses and any auditor failures. I ran [Inspect Petri](https://meridianlabs-ai.github.io/inspect_petri) 3.1.1 on inspect_ai 0.3.276. Per Petri's [model guidelines](https://meridianlabs-ai.github.io/inspect_petri/using/running.html), I made the following choices. 
 1. Target Model: MiMo-V2.6-Flash (xiaomi/mimo-v2.6-flash), 309B parameters total, 15B active, open source. 
 2. Auditor role: Sonnet 5.5 medium reasoning effort because I didn't want to lose reasoning quality as compared to the Opus models, but wanted to keep costs lower. 
 3. Judge role: This role needs a large context window as it reads the entire transcript and scores the target's responses and auditor's set up across the predefined dimensions, and has to do that for every rollback and branch of the test. Based on Inspect Petri's recommendation, I'm choosing Opus 5.5 as the judge. The costs to run the experiment are higher when Opus is the judge as we have a total of 30 runs. 1 run = 1 poem tested by the auditor across three branches (A,B,C), so 30 different poems, each run once = 30 runs. the target model does not have persistent memory across runs, so there is no risk of contamination from familiarity. 
@@ -154,7 +154,7 @@ The sway towards the user or away from the user needs to be 2 points or more to 
 
 I also count the runs that moved away from the user by at least 2 points more than branch C. If the model is only wobbling, the toward and away counts should come out about equal. Runs where there was no room to go further in the doubling down scenario stay in the 30 and are reported separately. 
 
-The Inspect_Petri model guidelines suggests picking the highest reasoning model you can have because a poorer judgement can add noise to the experiment. I was planning to choose Sonnet 5.5 to keep costs in check, but having a clearer experiment judgement matters more. The hand check of 10% of the transcripts is to make sure that the judge is not overly harsh or lenient in the grading, and that the auditor is not accidentally providing information that compromises the eval. 
+Petri's [model guidelines](https://meridianlabs-ai.github.io/inspect_petri/using/running.html) suggest picking the highest reasoning model you can have because a poorer judgement can add noise to the experiment. I was planning to choose Sonnet 5.5 to keep costs in check, but having a clearer experiment judgement matters more. The hand check of 10% of the transcripts is to make sure that the judge is not overly harsh or lenient in the grading, and that the auditor is not accidentally providing information that compromises the eval. 
 
 ---
 
@@ -207,7 +207,7 @@ Earlier posts in this series:
 - Post 2, [What a Base Model With No Reason to Agree Does When You Push Back](https://pranjalibuild.github.io/sycophancy-evals-kimi-claude/posts/base-model-pushback.html).
 
 Tools, models and data:
-- [Inspect Petri](https://meridianlabs-ai.github.io/inspect_petri) for the audit, auditor Claude Sonnet 5.5 (medium effort), judge Claude Opus 5.5.
+- [Inspect Petri](https://meridianlabs-ai.github.io/inspect_petri) 3.1.1 for the audit, [source on GitHub](https://github.com/meridianlabs-ai/inspect_petri), running on inspect_ai 0.3.276. Auditor Claude Sonnet 5.5 at medium reasoning effort, judge Claude Opus 5.5.
 - Target: `xiaomi/mimo-v2.6-flash` through OpenRouter, reasoning off.
 - Poems, seeds, preregistrations, run logs and transcripts: [github.com/pranjalibuild/sycophancy-evals-kimi-claude](https://github.com/pranjalibuild/sycophancy-evals-kimi-claude).
 
