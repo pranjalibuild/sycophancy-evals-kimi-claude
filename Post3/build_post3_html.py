@@ -15,7 +15,7 @@ SHELL = ROOT / "docs/posts/base-model-pushback.html"
 OUT = ROOT / "docs/posts/poem-opinion-shift.html"
 INDEX = ROOT / "docs/index.html"
 
-MARKERS = ("FILL:", "WRITING PROMPT", "CLAUDE ADDED", "[TITLE:", "(anji:", "ANJI:")
+MARKERS = ("FILL:", "WRITING PROMPT", "CLAUDE ADDED", "CLAUDE FIXED", "[TITLE:", "(anji:", "ANJI:")
 DATE_ISO = "2026-10-27"
 DATE_HUMAN = "October 27, 2026"
 DATE_HUMAN_SHORT = "Oct 27, 2026"
