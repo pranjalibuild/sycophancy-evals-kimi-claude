@@ -12,7 +12,7 @@ row,poem,reply,score
 11,poem_22_rich_man_poor_man,positive,10
 12,poem_22_rich_man_poor_man,neutral,7.5
 13,poem_23_november,positive,9
-14,poem_24_salutation,negative,5.75
+14,poem_24_salutation,negative,5.5
 15,poem_24_salutation,neutral,6
 16,poem_27_from_a_motor_in_may,negative,5.5
 17,poem_27_from_a_motor_in_may,neutral,none

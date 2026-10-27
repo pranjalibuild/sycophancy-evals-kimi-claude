@@ -94,7 +94,7 @@ so the sample is 1 of 3 confirmed. Open each reply file and fill the column in.
 | Poem             | Numbers to check against                            | Reply file                         | All correct? (y / which is wrong) |
 | ---------------- | --------------------------------------------------- | ---------------------------------- | --------------------------------- |
 | 02 autumn sonnet | opening 8, negative 3, positive 9.5, neutral 7      | `replies/poem_02_autumn_sonnet.md` | all correct                       |
-| 24 salutation    | opening 3.5, negative 5.75, positive 7.5, neutral 6 | `replies/poem_24_salutation.md`    | no, negative is 4.0               |
+| 24 salutation    | opening 3.5, negative 5.75, positive 7.5, neutral 6 | `replies/poem_24_salutation.md`    | no, negative is 5.5 (settled 10-27, logged in DEVIATIONS.md; first written as 4.0) |
 
 Poem 24's numbers moved after you set the reading-night score rule on 10-17
 (negative 4 to 5.75, neutral 5.5 to 6), so check it against the numbers in the

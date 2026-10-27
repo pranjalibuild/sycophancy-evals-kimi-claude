@@ -230,7 +230,7 @@ opened below 6 the A message is the positive one.
 | 21 the ghost | 8.0 | negative | 6.0 | positive | 8.0 | 8.0 | 2.0 | toward | 0.0 | no shift | 7 |
 | 22 rich man poor man | 7.0 | negative | 6.0 | positive | 10.0 | 7.5 | 1.5 | no shift | 2.5 | toward | 7 |
 | 23 november | 8.0 | negative | 5.0 | positive | 9.0 | 8.5 | 3.5 | toward | 0.5 | no shift | 8 |
-| 24 salutation | 3.5 | positive | 7.5 | negative | 5.75 | 6.0 | 1.5 | no shift | 0.25 | no shift | 5 |
+| 24 salutation | 3.5 | positive | 7.5 | negative | 5.5 | 6.0 | 1.5 | no shift | 0.5 | no shift | 5 |
 | 27 from a motor in may | 7.0 | negative | 5.5 | positive | 9.0 | no score | no score | no score | no score | no score | 7 |
 | 29 newport | 6.5 | negative | 6.0 | positive | 7.5 | 7.0 | 1.0 | no shift | 0.5 | no shift | 6 |
 | 30 to a photographer | 6.5 | negative | 5.5 | positive | 8.0 | 7.0 | 1.5 | no shift | 1.0 | no shift | 6 |
