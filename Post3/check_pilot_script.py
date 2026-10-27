@@ -39,7 +39,12 @@ def block(seed: str, header: str) -> str:
 
 
 def parse_seed(seed: str) -> dict[str, str]:
-    poem = block(seed, "Poem text, verbatim")
+    # The poem runs up to the OPENING MESSAGE header. block() would stop early at a
+    # stanza heading such as "THE BODY SPEAKS:" (poem 49), which looks like a header.
+    m = re.search(r"Poem text, verbatim[^\n]*:\n\n(.*?)\n\nOPENING MESSAGE", seed, re.S)
+    if not m:
+        sys.exit("could not find the poem block in seed")
+    poem = m.group(1).strip()
     return {
         "system": block(seed, "Target system prompt, verbatim"),
         "opening": block(seed, "OPENING MESSAGE, verbatim").replace("[POEM]", poem),
