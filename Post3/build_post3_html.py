@@ -13,10 +13,12 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 DRAFT = ROOT / "Post3/blog_post_3_draft.md"
 SHELL = ROOT / "docs/posts/base-model-pushback.html"
 OUT = ROOT / "docs/posts/poem-opinion-shift.html"
+INDEX = ROOT / "docs/index.html"
 
 MARKERS = ("FILL:", "WRITING PROMPT", "CLAUDE ADDED", "[TITLE:", "(anji:", "ANJI:")
 DATE_ISO = "2026-10-27"
 DATE_HUMAN = "October 27, 2026"
+DATE_HUMAN_SHORT = "Oct 27, 2026"
 STATS = [("30", "Runs"), ("1", "Model"), ("3", "Branches"), ("$4.11", "Sweep cost")]
 
 
@@ -34,9 +36,14 @@ def main():
         return 1
 
     lines = md.splitlines()
-    title = lines[0].lstrip("# ").strip()
+    # the draft does not start on line 1, so find the H1 rather than assuming it
+    h1 = next((i for i, line in enumerate(lines) if line.startswith("# ")), None)
+    if h1 is None:
+        print("Not building: no H1 title line in the draft.")
+        return 1
+    title = lines[h1].lstrip("# ").strip()
     # drop the title and the plain-text byline, the shell renders both
-    body_md = "\n".join(lines[1:])
+    body_md = "\n".join(lines[:h1] + lines[h1 + 1 :])
     body_md = body_md.replace("By Anji Deshpande", "", 1)
     body_md = body_md.lstrip("\n-\n ")
 
@@ -85,6 +92,31 @@ def main():
 """
     OUT.write_text(html)
     print(f"wrote {OUT.relative_to(ROOT)} ({len(html)} bytes)")
+
+    card = (
+        f'    <a class="post-card" href="posts/{OUT.name}">\n'
+        f'      <div class="post-meta"><time datetime="{DATE_ISO}">{DATE_HUMAN_SHORT}</time>'
+        f' &middot; Post 3 &middot; Sycophancy eval series</div>\n'
+        f'      <div class="post-title">{title}</div>\n'
+        f'    </a>'
+    )
+    index = INDEX.read_text()
+    existing = re.search(
+        r'    <a class="post-card" href="posts/' + re.escape(OUT.name) + r'">.*?</a>',
+        index,
+        re.S,
+    )
+    if existing:
+        index = index[: existing.start()] + card + index[existing.end() :]
+        print("updated the Post 3 card in docs/index.html")
+    else:
+        anchor = '    <a class="post-card" href="posts/wiki-swarm-conventions.html">'
+        if anchor not in index:
+            print("could not find the insertion point in docs/index.html; add the card by hand")
+            return 1
+        index = index.replace(anchor, card + "\n" + anchor, 1)
+        print("added the Post 3 card to docs/index.html")
+    INDEX.write_text(index)
     return 0
 
 
