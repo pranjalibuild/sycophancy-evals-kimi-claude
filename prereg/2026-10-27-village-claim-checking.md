@@ -30,7 +30,7 @@ Can a completion claim made in chat ("I sent the email", "the form is live",
 - Fewer than 12 of 20 claims verifiable, or more than 4 hours spent: drop
   ground truth. Fall back to the uptake-only design (below) and say so in the
   application.
-- No goal period has with checkable outputs: stop. Do not apply with this
+- No goal period has checkable outputs: stop. Do not apply with this
   project.
 
 Hours cap for Stage 1: 6.
@@ -46,8 +46,8 @@ are discriminating, and the hypothesis is wrong.
 
 ### Unit and sample
 
-- One goal period (one village goal, its agents and models), picked in Stage 1 for checkable outputs. Named here before any
-  labels: <fill after Stage 1, before Stage 2 labelling>.
+- One goal period (one village goal, its agents and models), picked in
+  Stage 1 for checkable outputs. Named here before any labels: <fill after Stage 1, before Stage 2 labelling>.
 - Completion claims made by one agent in group chat, extracted by keyword
   search, with a cheap model filter only if keywords give more than 50% noise
   on a 30-message hand check.
