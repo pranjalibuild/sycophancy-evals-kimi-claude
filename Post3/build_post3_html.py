@@ -11,7 +11,7 @@ import markdown
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DRAFT = ROOT / "Post3/blog_post_3_draft.md"
-SHELL = ROOT / "docs/posts/base-model-pushback.html"
+CSS = ROOT / "Post3/post_shell.css"
 OUT = ROOT / "docs/posts/poem-opinion-shift.html"
 INDEX = ROOT / "docs/index.html"
 
@@ -52,18 +52,19 @@ def main():
         "</table>", "</table></div>"
     )
 
-    shell = SHELL.read_text()
-    head = shell[: shell.index("</head>") + len("</head>")]
-    head = head.replace(
-        "<title>What a Base Model With No Reason to Agree Does When You Push Back</title>",
-        f"<title>{title}</title>",
-    )
-    head = re.sub(
-        r'<meta name="description" content="[^"]*">',
-        '<meta name="description" content="A petri audit of whether MiMo-V2.6-Flash '
-        "changes its score for a poem when the user disagrees, against a neutral "
-        'control branch.">',
-        head,
+    # anchor every section and build the chapter chips from the same list
+    chapters = []
+
+    def anchor(m):
+        text = m.group(1)
+        slug = re.sub(r"[^a-z0-9]+", "-", re.sub(r"<[^>]+>", "", text).lower()).strip("-")
+        label = text.split(":")[0] if text.lower().startswith("appendix") else text
+        chapters.append((slug, label))
+        return f'<h2 id="{slug}">{text}</h2>'
+
+    body = re.sub(r"<h2>(.*?)</h2>", anchor, body, flags=re.S)
+    chips = "\n".join(
+        f'      <a href="#{slug}">{label}</a>' for slug, label in chapters
     )
 
     stats = "\n".join(
@@ -72,20 +73,45 @@ def main():
         for n, label in STATS
     )
 
-    html = f"""{head}
+    html = f"""<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{title}</title>
+<meta name="description" content="A Petri audit of whether MiMo-V2.6-Flash changes its score for a poem when the user disagrees, measured against a neutral control branch.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+{CSS.read_text()}
+</style>
+</head>
 <body>
-<div class="top-nav"><a href="../index.html">&larr; All posts</a></div>
-<div class="page">
-  <div class="eyebrow">AI Safety Eval Series &middot; Post 3</div>
-  <h1>{title}</h1>
-  <p class="byline">By Anji Deshpande &middot; <time datetime="{DATE_ISO}">{DATE_HUMAN}</time></p>
+<div class="wrap">
+  <div class="topbar"><a href="../index.html">&larr; All posts</a><span>Sycophancy eval series</span></div>
 
-  <div class="stat-strip">
+  <header class="hero">
+    <p class="eyebrow">AI safety eval series &middot; Post 3</p>
+    <h1>{title}</h1>
+    <div class="rule-accent"></div>
+    <p class="byline">By <b>Anji Deshpande</b> &middot; <time datetime="{DATE_ISO}">{DATE_HUMAN}</time></p>
+    <div class="stat-strip">
 {stats}
-  </div>
+    </div>
+    <nav class="chapters" aria-label="Sections">
+{chips}
+    </nav>
+  </header>
 
+  <main>
 {body}
-  <footer><a href="../index.html" style="color:inherit;">&larr; All posts</a> &middot; Sycophancy eval series, Post 3 &middot; 30 petri audits &middot; MiMo-V2.6-Flash via OpenRouter</footer>
+  </main>
+
+  <footer>
+    <span><a href="../index.html">&larr; All posts</a> &middot; Post 3, 30 Petri audits, MiMo-V2.6-Flash via OpenRouter</span>
+    <span><a href="https://github.com/pranjalibuild/sycophancy-evals-kimi-claude">Runs and preregistrations on GitHub</a></span>
+  </footer>
 </div>
 </body>
 </html>
