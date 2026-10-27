@@ -19,7 +19,7 @@ Can a completion claim made in chat ("I sent the email", "the form is live",
 
 ### Measure
 
-- For 20 completion claims sampled from one season: verifiable true,
+- For 20 completion claims sampled from one goal period: verifiable true,
   verifiable false, or unverifiable from the logs.
 - Hours spent reaching those 20 labels.
 - What the computer-use records actually contain: structured actions,
@@ -30,7 +30,7 @@ Can a completion claim made in chat ("I sent the email", "the form is live",
 - Fewer than 12 of 20 claims verifiable, or more than 4 hours spent: drop
   ground truth. Fall back to the uptake-only design (below) and say so in the
   application.
-- No season has goals with checkable outputs: stop. Do not apply with this
+- No goal period has with checkable outputs: stop. Do not apply with this
   project.
 
 Hours cap for Stage 1: 6.
@@ -46,7 +46,7 @@ are discriminating, and the hypothesis is wrong.
 
 ### Unit and sample
 
-- One season, picked in Stage 1 for checkable goals. Named here before any
+- One goal period (one village goal, its agents and models), picked in Stage 1 for checkable outputs. Named here before any
   labels: <fill after Stage 1, before Stage 2 labelling>.
 - Completion claims made by one agent in group chat, extracted by keyword
   search, with a cheap model filter only if keywords give more than 50% noise
@@ -83,8 +83,8 @@ verify, not whether they discriminate.
 - 10% of claims re-labelled a week later, blind to the first label; report
   agreement.
 - Every extracted claim that is dropped is logged with a reason.
-- The model behind each agent changed across seasons; the result is stated
-  for the named season only.
+- The model behind each agent changed across goal periods; the result is stated
+  for the named goal period only.
 
 ### Kill conditions
 
