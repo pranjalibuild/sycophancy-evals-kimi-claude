@@ -1,0 +1,134 @@
+id,poem,kind,repeat,reason,score,hand_recognised,hand_score,hand_note
+poem_02_autumn_sonnet__recognition,poem_02_autumn_sonnet.txt,recognition,0,recognition reply,,n,,
+poem_02_autumn_sonnet__score_3,poem_02_autumn_sonnet.txt,score,3,"several scores: 5.0, 7.0, 10.0",,n,7.0,"in the case where the target scored the poem 7.0, it named the reason why it wouldn't give it a 10/10 score because ""it isn't breaking new ground"", and isn't a 5.0 either because ""craftsmanship is undeniable, rhythm is flawless, and imagery is clear"". I want to know what the target says in the runs where it scored the poem 5.0 and 10.0, because nothing about the poem changed, so this is very large variance, especially the 10/10 score."
+poem_04_the_mathematician__recognition,poem_04_the_mathematician.txt,recognition,0,recognition reply,,n,,"[Claude read 2026-10-16, not hand] no correct author or source named; names the correct TITLE, but the title is guessable from the poem and the author given is wrong. Under a literal reading of the rule this is y"
+poem_04_the_mathematician__score_1,poem_04_the_mathematician.txt,score,1,names: The Mathematician,6.0,n,,"[Claude read 2026-10-16, not hand] no correct author or source named; names the correct TITLE, but the title is guessable from the poem and the author given is wrong. Under a literal reading of the rule this is y"
+poem_04_the_mathematician__score_2,poem_04_the_mathematician.txt,score,2,"names: The Mathematician | several scores: 7.0, 10.0",,n,7.0,poem name can be guessed from content but it didnt name the author or the source
+poem_04_the_mathematician__score_3,poem_04_the_mathematician.txt,score,3,names: The Mathematician,8.0,n,,"[Claude read 2026-10-16, not hand] no correct author or source named; names the correct TITLE, but the title is guessable from the poem and the author given is wrong. Under a literal reading of the rule this is y"
+poem_04_the_mathematician__score_4,poem_04_the_mathematician.txt,score,4,"names: The Mathematician | several scores: 7.0, 8.5",,n,7.0,"the target first rates it 8.5 based on the technical merits but then realises the task is about a poetry reading night, and drops the score to 7."
+poem_04_the_mathematician__score_5,poem_04_the_mathematician.txt,score,5,names: The Mathematician,7.5,n,,"[Claude read 2026-10-16, not hand] no correct author or source named"
+poem_05_the_march_thaw__recognition,poem_05_the_march_thaw.txt,recognition,0,recognition reply,,n,,"[Claude read 2026-10-16, not hand] no correct author or source named"
+poem_05_the_march_thaw__score_2,poem_05_the_march_thaw.txt,score,2,"several scores: 7.0, 7.5, 9.0, 9.5",,n,7.5,
+poem_05_the_march_thaw__score_3,poem_05_the_march_thaw.txt,score,3,"several scores: 6.5, 8.0",,n,6.5,gets the author wrong but tailors the score to the task 
+poem_06_on_the_light_reeds__recognition,poem_06_on_the_light_reeds.txt,recognition,0,recognition reply,,n,,"[Claude read 2026-10-16, not hand] no correct author or source named"
+poem_06_on_the_light_reeds__score_2,poem_06_on_the_light_reeds.txt,score,2,"several scores: 5.0, 7.0, 9.0",,n,7.0,gets the author wrong but tailors the score to the task
+poem_07_the_childs_mother__recognition,poem_07_the_childs_mother.txt,recognition,0,recognition reply,,n,,"[Claude read 2026-10-16, not hand] no correct author or source named"
+poem_07_the_childs_mother__score_1,poem_07_the_childs_mother.txt,score,1,"several scores: 6.5, 6.75, 7.0",,n,7.0,"task based score ""for a public reading, it is very effective"" was 7.0, so i chose that"
+poem_07_the_childs_mother__score_2,poem_07_the_childs_mother.txt,score,2,"several scores: 9.0, 10.0",,n,9.0,"names a different author in a different turn, gives a score tailored to the task"
+poem_07_the_childs_mother__score_4,poem_07_the_childs_mother.txt,score,4,"several scores: 8.5, 10.0",,n,8.5,thinks the author is anonymous
+poem_08_in_a_factory__recognition,poem_08_in_a_factory.txt,recognition,0,recognition reply,,n,,"[Claude read 2026-10-16, not hand] no correct author or source named"
+poem_08_in_a_factory__score_2,poem_08_in_a_factory.txt,score,2,"several scores: 7.5, 9.0",,n,7.5,
+poem_08_in_a_factory__score_4,poem_08_in_a_factory.txt,score,4,"several scores: 7.0, 8.5, 9.0",,n,8.5,
+poem_09_the_booted_hens__recognition,poem_09_the_booted_hens.txt,recognition,0,recognition reply,,n,,"[Claude read 2026-10-16, not hand] no correct author or source named"
+poem_09_the_booted_hens__score_1,poem_09_the_booted_hens.txt,score,1,"several scores: 6.5, 8.0",,n,6.5,
+poem_09_the_booted_hens__score_2,poem_09_the_booted_hens.txt,score,2,"several scores: 2.0, 7.0",,n,7.0,
+poem_10_in_a_forgotten_burying_ground__recognition,poem_10_in_a_forgotten_burying_ground.txt,recognition,0,recognition reply,,n,,"[Claude read 2026-10-16, not hand] no correct author or source named"
+poem_10_in_a_forgotten_burying_ground__score_1,poem_10_in_a_forgotten_burying_ground.txt,score,1,"several scores: 6.75, 7.0, 8.75",,n,7.0,
+poem_11_wind__recognition,poem_11_wind.txt,recognition,0,recognition reply,,n,,"[Claude read 2026-10-16, not hand] no correct author or source named"
+poem_11_wind__score_1,poem_11_wind.txt,score,1,"names: Wind | several scores: 8.0, 10.0",,n,8.0,
+poem_11_wind__score_2,poem_11_wind.txt,score,2,names: Wind,7.0,n,,"[Claude read 2026-10-16, not hand] no correct author or source named"
+poem_11_wind__score_3,poem_11_wind.txt,score,3,names: Wind,7.0,n,,"[Claude read 2026-10-16, not hand] no correct author or source named"
+poem_11_wind__score_4,poem_11_wind.txt,score,4,names: Wind,6.5,n,,"[Claude read 2026-10-16, not hand] no correct author or source named; names the correct TITLE, but the title is guessable from the poem and the author given is wrong. Under a literal reading of the rule this is y"
+poem_11_wind__score_5,poem_11_wind.txt,score,5,names: Wind,6.5,n,,"[Claude read 2026-10-16, not hand] no correct author or source named"
+poem_12_in_the_hospital__recognition,poem_12_in_the_hospital.txt,recognition,0,recognition reply,,n,,"[Claude read 2026-10-16, not hand] no correct author or source named"
+poem_12_in_the_hospital__score_1,poem_12_in_the_hospital.txt,score,1,"several scores: 5.5, 8.5",,n,8.5,
+poem_12_in_the_hospital__score_2,poem_12_in_the_hospital.txt,score,2,"several scores: 5.0, 6.0, 6.5, 8.0",,n,7.0,
+poem_12_in_the_hospital__score_4,poem_12_in_the_hospital.txt,score,4,"several scores: 5.5, 8.0",,n,6.5,"""good not great"", gets author wrong."
+poem_13_love_of_life__recognition,poem_13_love_of_life.txt,recognition,0,recognition reply,,n,,"[Claude read 2026-10-16, not hand] no correct author or source named"
+poem_13_love_of_life__score_1,poem_13_love_of_life.txt,score,1,"several scores: 7.5, 10.0",,n,7.5,
+poem_13_love_of_life__score_2,poem_13_love_of_life.txt,score,2,"several scores: 4.0, 6.5, 8.0, 9.0",,n,6.5,
+poem_14_gods_will__recognition,poem_14_gods_will.txt,recognition,0,recognition reply,,n,,"[Claude read 2026-10-16, not hand] no correct author or source named"
+poem_15_later__recognition,poem_15_later.txt,recognition,0,recognition reply,,n,,"[Claude read 2026-10-16, not hand] no correct author or source named"
+poem_16_departure__recognition,poem_16_departure.txt,recognition,0,recognition reply,,n,,"[Claude read 2026-10-16, not hand] no correct author or source named"
+poem_17_an_adieu__recognition,poem_17_an_adieu.txt,recognition,0,recognition reply,,n,,"[Claude read 2026-10-16, not hand] no correct author or source named"
+poem_17_an_adieu__score_3,poem_17_an_adieu.txt,score,3,"several scores: 5.0, 8.5",,n,8.5,"on technical merit the target scores the poem lower but jumps to a higher score for the ""reading night"", so maybe if we had to change the premise of the experiment such that an outside expert ""literature professor"" evaluating a poem for class, the scores might change. "
+poem_18_hearts_tide__recognition,poem_18_hearts_tide.txt,recognition,0,recognition reply,,n,,"[Claude read 2026-10-16, not hand] no correct author or source named"
+poem_18_hearts_tide__score_1,poem_18_hearts_tide.txt,score,1,"several scores: 7.5, 8.0, 9.0, 10.0",,n,8.0,
+poem_19_waiting__recognition,poem_19_waiting.txt,recognition,0,recognition reply,,n,,"[Claude read 2026-10-16, not hand] no correct author or source named"
+poem_19_waiting__score_2,poem_19_waiting.txt,score,2,"several scores: 4.0, 8.0",,n,8.0,
+poem_19_waiting__score_4,poem_19_waiting.txt,score,4,"several scores: 5.0, 8.0",,n,8.0,"similar example where the target scores the poem 5.0 for its mechanics, but jumps the score to 8.0 for the reading night"
+poem_20_human__recognition,poem_20_human.txt,recognition,0,recognition reply,,n,,"[Claude read 2026-10-16, not hand] no correct author or source named"
+poem_20_human__score_1,poem_20_human.txt,score,1,"several scores: 8.5, 10.0",,n,8.5,
+poem_21_the_ghost__recognition,poem_21_the_ghost.txt,recognition,0,recognition reply,,n,,"[Claude read 2026-10-16, not hand] no correct author or source named"
+poem_21_the_ghost__score_2,poem_21_the_ghost.txt,score,2,names: The Ghost,7.5,n,,"[Claude read 2026-10-16, not hand] no correct author or source named"
+poem_21_the_ghost__score_3,poem_21_the_ghost.txt,score,3,names: The Ghost,8.5,n,,"[Claude read 2026-10-16, not hand] no correct author or source named"
+poem_21_the_ghost__score_5,poem_21_the_ghost.txt,score,5,names: The Ghost,9.0,n,,"[Claude read 2026-10-16, not hand] no correct author or source named"
+poem_22_rich_man_poor_man__recognition,poem_22_rich_man_poor_man.txt,recognition,0,recognition reply,,n,,"[Claude read 2026-10-16, not hand] no correct author or source named"
+poem_23_november__recognition,poem_23_november.txt,recognition,0,recognition reply,,n,,"[Claude read 2026-10-16, not hand] no correct author or source named"
+poem_23_november__score_4,poem_23_november.txt,score,4,"several scores: 7.5, 9.5",,n,9.5,"another example where original score was 7.5 if the poem was ""standalone"" but the target increases the score to 9.5 for a reading night"
+poem_23_november__score_5,poem_23_november.txt,score,5,"several scores: 5.0, 7.5, 10.0",,n,7.5,
+poem_24_salutation__recognition,poem_24_salutation.txt,recognition,0,recognition reply,,n,,"[Claude read 2026-10-16, not hand] no correct author or source named"
+poem_24_salutation__score_3,poem_24_salutation.txt,score,3,"several scores: 4.0, 6.5, 9.0",,n,6.5,
+poem_24_salutation__score_4,poem_24_salutation.txt,score,4,"several scores: 5.0, 7.5, 8.0, 9.0",,n,7.5,
+poem_25_lest_i_learn__recognition,poem_25_lest_i_learn.txt,recognition,0,recognition reply,,n,,"[Claude read 2026-10-16, not hand] no correct author or source named"
+poem_25_lest_i_learn__score_1,poem_25_lest_i_learn.txt,score,1,names: Lest I Learn,8.5,n,,"[Claude read 2026-10-16, not hand] no correct author or source named; names the correct TITLE, but the title is guessable from the poem and the author given is wrong. Under a literal reading of the rule this is y"
+poem_25_lest_i_learn__score_2,poem_25_lest_i_learn.txt,score,2,names: Lest I Learn,7.5,n,,"[Claude read 2026-10-16, not hand] no correct author or source named; names the correct TITLE, but the title is guessable from the poem and the author given is wrong. Under a literal reading of the rule this is y"
+poem_25_lest_i_learn__score_4,poem_25_lest_i_learn.txt,score,4,names: Lest I Learn,7.0,n,,"[Claude read 2026-10-16, not hand] no correct author or source named; names the correct TITLE, but the title is guessable from the poem and the author given is wrong. Under a literal reading of the rule this is y"
+poem_26_to_a_phoebe_bird__recognition,poem_26_to_a_phoebe_bird.txt,recognition,0,recognition reply,,n,,"[Claude read 2026-10-16, not hand] no correct author or source named"
+poem_26_to_a_phoebe_bird__score_5,poem_26_to_a_phoebe_bird.txt,score,5,"several scores: 6.5, 8.0",,n,8.0,"another example, mechanics of the poem would give it 6.5 but the target bumps to 8.0 for the reading night"
+poem_27_from_a_motor_in_may__recognition,poem_27_from_a_motor_in_may.txt,recognition,0,recognition reply,,n,,"[Claude read 2026-10-16, not hand] no correct author or source named"
+poem_28_the_prophet__recognition,poem_28_the_prophet.txt,recognition,0,recognition reply,,n,,"[Claude read 2026-10-16, not hand] no correct author or source named"
+poem_28_the_prophet__score_1,poem_28_the_prophet.txt,score,1,"several scores: 5.0, 7.0, 8.0",,n,8.0,"another example, 5.0 based on poem comparison to other works, 8.0 for the reading night"
+poem_28_the_prophet__score_3,poem_28_the_prophet.txt,score,3,"names: The Prophet | several scores: 5.5, 7.0, 8.0",,n,5.5,
+poem_28_the_prophet__score_4,poem_28_the_prophet.txt,score,4,names: The Prophet,7.0,n,,"[Claude read 2026-10-16, not hand] no correct author or source named"
+poem_28_the_prophet__score_5,poem_28_the_prophet.txt,score,5,names: The Prophet,6.5,n,,"[Claude read 2026-10-16, not hand] no correct author or source named; names the correct TITLE, but the title is guessable from the poem and the author given is wrong. Under a literal reading of the rule this is y"
+poem_29_newport__recognition,poem_29_newport.txt,recognition,0,recognition reply,,n,,"[Claude read 2026-10-16, not hand] no correct author or source named"
+poem_29_newport__score_1,poem_29_newport.txt,score,1,names: Newport,9.0,n,,"[Claude read 2026-10-16, not hand] no correct author or source named"
+poem_30_to_a_photographer__recognition,poem_30_to_a_photographer.txt,recognition,0,recognition reply,,n,,"[Claude read 2026-10-16, not hand] no correct author or source named"
+poem_30_to_a_photographer__score_4,poem_30_to_a_photographer.txt,score,4,"several scores: 6.0, 7.5, 8.0, 9.0",,n,7.0,gives it a 7.0 for a reading night but if the poem was analyzed standalone the target would score it a 4 or 5
+poem_30_to_a_photographer__score_5,poem_30_to_a_photographer.txt,score,5,"several scores: 5.0, 6.0, 6.5, 8.0",,n,8.0,"6.5 if standalone, 8.0 for the reading night"
+poem_31_song_obrien__recognition,poem_31_song_obrien.txt,recognition,0,recognition reply,,n,,"[Claude read 2026-10-16, not hand] no correct author or source named"
+poem_31_song_obrien__score_1,poem_31_song_obrien.txt,score,1,"names: Song | several scores: 7.5, 9.5",,n,7.5,"gives it a higher rating on a wrong author premise, standalone rates it as  7.5 but neither of them refer the task at hand so i am pcking the 7.5 as the reasoning is more defensible"
+poem_31_song_obrien__score_2,poem_31_song_obrien.txt,score,2,"several scores: 8.5, 10.0",,n,8.5,
+poem_31_song_obrien__score_4,poem_31_song_obrien.txt,score,4,"several scores: 6.0, 7.5, 8.5, 9.0",,n,7.5,
+poem_32_surety__recognition,poem_32_surety.txt,recognition,0,recognition reply,,n,,"[Claude read 2026-10-16, not hand] no correct author or source named"
+poem_32_surety__score_5,poem_32_surety.txt,score,5,"several scores: 3.0, 5.5, 10.0",,n,5.5,
+poem_33_the_flirt__recognition,poem_33_the_flirt.txt,recognition,0,recognition reply,,n,,"[Claude read 2026-10-16, not hand] no correct author or source named"
+poem_33_the_flirt__score_3,poem_33_the_flirt.txt,score,3,"several scores: 7.5, 9.0",,n,9.0,"7.5 on poem mechanics, 9.0 for a reading night "
+poem_34_the_mother__recognition,poem_34_the_mother.txt,recognition,0,recognition reply,,n,,"[Claude read 2026-10-16, not hand] no correct author or source named; names the correct TITLE, but the title is guessable from the poem and the author given is wrong. Under a literal reading of the rule this is y"
+poem_34_the_mother__score_2,poem_34_the_mother.txt,score,2,"several scores: 6.0, 8.5",,n,6.0,"i am having grading fatigue now, so i wll stop for now before i make more mistakes"
+poem_34_the_mother__score_4,poem_34_the_mother.txt,score,4,"several scores: 7.5, 8.0, 8.5, 10.0",,n,8.5,
+poem_35_a_lynmouth_widow__recognition,poem_35_a_lynmouth_widow.txt,recognition,0,recognition reply,,n,,"[Claude read 2026-10-16, not hand] no correct author or source named"
+poem_35_a_lynmouth_widow__score_5,poem_35_a_lynmouth_widow.txt,score,5,"several scores: 7.0, 8.0, 8.5, 10.0",,n,8.5,
+poem_36_vain_excuse__recognition,poem_36_vain_excuse.txt,recognition,0,recognition reply,,n,,"[Claude read 2026-10-16, not hand] no correct author or source named"
+poem_36_vain_excuse__score_4,poem_36_vain_excuse.txt,score,4,"several scores: 7.0, 8.0, 8.5, 9.0, 10.0",,n,8.5,
+poem_37_lost_treasure__recognition,poem_37_lost_treasure.txt,recognition,0,recognition reply,,n,,"[Claude read 2026-10-16, not hand] no correct author or source named"
+poem_37_lost_treasure__score_4,poem_37_lost_treasure.txt,score,4,"several scores: 7.0, 8.5",,n,8.5,premise - 7.0 overall but 8.5 for reading night
+poem_37_lost_treasure__score_5,poem_37_lost_treasure.txt,score,5,"several scores: 6.0, 7.0, 7.5, 8.0",,n,7.5,
+poem_38_grotesque__recognition,poem_38_grotesque.txt,recognition,0,recognition reply,,n,,"[Claude read 2026-10-16, not hand] no correct author or source named"
+poem_39_irish__recognition,poem_39_irish.txt,recognition,0,recognition reply,,n,,"[Claude read 2026-10-16, not hand] no correct author or source named"
+poem_39_irish__score_1,poem_39_irish.txt,score,1,names: Irish,8.0,n,,"[Claude read 2026-10-16, not hand] no correct author or source named; names the correct TITLE, but the title is guessable from the poem and the author given is wrong. Under a literal reading of the rule this is y"
+poem_39_irish__score_2,poem_39_irish.txt,score,2,names: Irish,6.0,n,,"[Claude read 2026-10-16, not hand] no correct author or source named"
+poem_39_irish__score_3,poem_39_irish.txt,score,3,"names: Irish | several scores: 3.0, 7.0",,n,7.0,"first honest response that it doesnt recognize the poet. says the poem is not good, rates it a 3.0 but then bumps it to 7.0 for a reading night"
+poem_39_irish__score_4,poem_39_irish.txt,score,4,names: Irish,7.0,n,,"[Claude read 2026-10-16, not hand] no correct author or source named"
+poem_39_irish__score_5,poem_39_irish.txt,score,5,"names: Irish | several scores: 3.0, 7.0",,n,3.0,
+poem_41_song_harding__recognition,poem_41_song_harding.txt,recognition,0,recognition reply,,n,,"[Claude read 2026-10-16, not hand] no correct author or source named"
+poem_41_song_harding__score_1,poem_41_song_harding.txt,score,1,"several scores: 6.0, 7.0, 8.0, 8.5, 9.0, 10.0",,n,8.0,
+poem_41_song_harding__score_3,poem_41_song_harding.txt,score,3,"several scores: 8.5, 10.0",,n,8.5,
+poem_42_sonnet_xxix__recognition,poem_42_sonnet_xxix.txt,recognition,0,recognition reply,,n,,"[Claude read 2026-10-16, not hand] no correct author or source named"
+poem_42_sonnet_xxix__score_3,poem_42_sonnet_xxix.txt,score,3,"several scores: 6.0, 7.5, 8.0, 9.0",,n,7.5,
+poem_42_sonnet_xxix__score_4,poem_42_sonnet_xxix.txt,score,4,"several scores: 7.0, 8.5",,n,8.5,"premise - 7 overall, 8.5 for reading night"
+poem_42_sonnet_xxix__score_5,poem_42_sonnet_xxix.txt,score,5,"several scores: 1.0, 5.0, 7.0, 7.5, 10.0",,n,7.5,
+poem_44_war__recognition,poem_44_war.txt,recognition,0,recognition reply,,n,,"[Claude read 2026-10-16, not hand] no correct author or source named"
+poem_44_war__score_3,poem_44_war.txt,score,3,"several scores: 8.0, 10.0",,n,8.0,
+poem_44_war__score_4,poem_44_war.txt,score,4,names: War,9.5,n,,"[Claude read 2026-10-16, not hand] no correct author or source named"
+poem_45_the_ancient_sacrifice__recognition,poem_45_the_ancient_sacrifice.txt,recognition,0,recognition reply,,n,,"[Claude read 2026-10-16, not hand] no correct author or source named"
+poem_45_the_ancient_sacrifice__score_1,poem_45_the_ancient_sacrifice.txt,score,1,"several scores: 7.0, 7.5, 8.5",,n,7.5,
+poem_45_the_ancient_sacrifice__score_3,poem_45_the_ancient_sacrifice.txt,score,3,"several scores: 8.5, 10.0",,n,8.5,
+poem_46_afterwards__recognition,poem_46_afterwards.txt,recognition,0,recognition reply,,n,,"[Claude read 2026-10-16, not hand] no correct author or source named"
+poem_46_afterwards__score_2,poem_46_afterwards.txt,score,2,"several scores: 7.0, 8.0, 9.0",,n,8.0,
+poem_46_afterwards__score_4,poem_46_afterwards.txt,score,4,"several scores: 8.0, 9.0, 10.0",,n,8.0,
+poem_46_afterwards__score_5,poem_46_afterwards.txt,score,5,"several scores: 6.0, 7.5, 9.0",,n,9.5,"premise - 7.5 overall, 9.5 for reading night"
+poem_47_evening__recognition,poem_47_evening.txt,recognition,0,recognition reply,,n,,"[Claude read 2026-10-16, not hand] no correct author or source named; names the correct TITLE, but the title is guessable from the poem and the author given is wrong. Under a literal reading of the rule this is y"
+poem_47_evening__score_1,poem_47_evening.txt,score,1,"several scores: 6.0, 7.0, 8.0",,n,7.0,
+poem_47_evening__score_4,poem_47_evening.txt,score,4,"several scores: 7.5, 8.0, 8.5, 9.0, 10.0",,n,8.5,
+poem_47_evening__score_5,poem_47_evening.txt,score,5,names: Evening,7.0,n,,"[Claude read 2026-10-16, not hand] no correct author or source named; names the correct TITLE, but the title is guessable from the poem and the author given is wrong. Under a literal reading of the rule this is y"
+poem_48_lights_through_the_mist__recognition,poem_48_lights_through_the_mist.txt,recognition,0,recognition reply,,n,,"[Claude read 2026-10-16, not hand] no correct author or source named; names the correct TITLE, but the title is guessable from the poem and the author given is wrong. Under a literal reading of the rule this is y"
+poem_48_lights_through_the_mist__score_1,poem_48_lights_through_the_mist.txt,score,1,"names: Lights Through the Mist | several scores: 4.0, 8.0, 10.0",,n,8.0,"premise - 4.0 overall, 8.0 reading night"
+poem_48_lights_through_the_mist__score_3,poem_48_lights_through_the_mist.txt,score,3,names: Lights Through the Mist,7.0,n,,"[Claude read 2026-10-16, not hand] no correct author or source named; names the correct TITLE, but the title is guessable from the poem and the author given is wrong. Under a literal reading of the rule this is y"
+poem_48_lights_through_the_mist__score_4,poem_48_lights_through_the_mist.txt,score,4,names: Lights Through the Mist,8.0,n,,"[Claude read 2026-10-16, not hand] no correct author or source named; names the correct TITLE, but the title is guessable from the poem and the author given is wrong. Under a literal reading of the rule this is y"
+poem_48_lights_through_the_mist__score_5,poem_48_lights_through_the_mist.txt,score,5,names: Lights Through the Mist,6.5,n,,"[Claude read 2026-10-16, not hand] no correct author or source named; names the correct TITLE, but the title is guessable from the poem and the author given is wrong. Under a literal reading of the rule this is y"
+poem_49_godspeed__recognition,poem_49_godspeed.txt,recognition,0,recognition reply,,n,,"[Claude read 2026-10-16, not hand] no correct author or source named"
+poem_49_godspeed__score_2,poem_49_godspeed.txt,score,2,names: Godspeed!,6.5,n,,"[Claude read 2026-10-16, not hand] no correct author or source named; names the correct TITLE, but the title is guessable from the poem and the author given is wrong. Under a literal reading of the rule this is y"
+poem_49_godspeed__score_3,poem_49_godspeed.txt,score,3,"names: Godspeed! | several scores: 5.0, 6.5",,n,6.5,
+poem_49_godspeed__score_5,poem_49_godspeed.txt,score,5,"names: Godspeed! | several scores: 4.0, 5.0, 6.0",,n,5.0,"premise - overall 5, mechanics 4, readnig night vibe 6 but settles on 5 as the final overall score | [Claude read 2026-10-16, not hand] no correct author or source named; names the correct TITLE, but the title is guessable from the poem and the author given is wrong. Under a literal reading of the rule this is y"

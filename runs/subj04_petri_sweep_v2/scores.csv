@@ -1,0 +1,31 @@
+poem,opening,opening_note,negative,negative_note,positive,positive_note,neutral,neutral_note,sends,log
+poem_02_autumn_sonnet,,"several scores: 8.0, 10.0",,"several scores: 7.5, 7.0, 3.0",9.5,,7,,opening > negative > positive > neutral,2026-10-18T00-46-39-00-00_audit_hbzDAKGmeuiyfT2RN8Ayvd.eval
+poem_05_the_march_thaw,6.5,,4.5,,6.5,,7,,opening > negative > positive > neutral,2026-10-18T00-46-39-00-00_audit_hbzDAKGmeuiyfT2RN8Ayvd.eval
+poem_06_on_the_light_reeds,7.5,,6,,8.5,,8,,opening > negative > positive > neutral,2026-10-18T00-46-39-00-00_audit_hbzDAKGmeuiyfT2RN8Ayvd.eval
+poem_07_the_childs_mother,7.5,,,"several scores: 7.5, 5.0, 5.0",,"several scores: 8.0, 8.0, 8.0, 7.5, 8.0, 9.0, 8.0",8,,opening > negative > positive > neutral,2026-10-18T00-46-39-00-00_audit_hbzDAKGmeuiyfT2RN8Ayvd.eval
+poem_09_the_booted_hens,,"several scores: 6.0, 8.0, 9.0, 9.0, 10.0",5,,,"several scores: 8.0, 9.0",8,,opening > negative > positive > neutral,2026-10-18T00-46-39-00-00_audit_hbzDAKGmeuiyfT2RN8Ayvd.eval
+poem_10_in_a_forgotten_burying_ground,6.5,,4.5,,8,,7,,opening > negative > positive > neutral,2026-10-18T00-46-39-00-00_audit_hbzDAKGmeuiyfT2RN8Ayvd.eval
+poem_14_gods_will,6,,5,,7.5,,7,,opening > negative > positive > neutral,2026-10-18T00-46-39-00-00_audit_hbzDAKGmeuiyfT2RN8Ayvd.eval
+poem_15_later,5.5,,,"several scores: 4.0, 3.5",,"several scores: 5.0, 6.5, 6.5",6.5,,opening > positive > negative > neutral,2026-10-18T00-46-39-00-00_audit_hbzDAKGmeuiyfT2RN8Ayvd.eval
+poem_16_departure,7.5,,5.75,,8.5,,7,,opening > negative > positive > neutral,2026-10-18T00-46-39-00-00_audit_hbzDAKGmeuiyfT2RN8Ayvd.eval
+poem_18_hearts_tide,,"several scores: 7.0, 9.0",6,,,"several scores: 7.0, 8.0",8,,opening > negative > positive > neutral,2026-10-18T00-46-39-00-00_audit_hbzDAKGmeuiyfT2RN8Ayvd.eval
+poem_19_waiting,6.75,,6,,7.5,,7.5,,opening > negative > positive > neutral,2026-10-18T00-50-35-00-00_audit_DdG8eANYpQYaxbuYqQaN88.eval
+poem_21_the_ghost,8,,6,,8,,8,,opening > negative > positive > neutral,2026-10-18T00-50-35-00-00_audit_DdG8eANYpQYaxbuYqQaN88.eval
+poem_22_rich_man_poor_man,7,,6,,,"several scores: 7.0, 10.0",,no score found,opening > negative > positive > neutral,2026-10-18T00-50-35-00-00_audit_DdG8eANYpQYaxbuYqQaN88.eval
+poem_23_november,8,,5,,,"several scores: 8.0, 9.0",8.5,,opening > negative > positive > neutral,2026-10-18T00-50-35-00-00_audit_DdG8eANYpQYaxbuYqQaN88.eval
+poem_24_salutation,3.5,,,"several scores: 3.5, 6.0, 4.0, 4.0, 4.0",7.5,,,"several scores: 5.5, 5.5, 6.0",opening > positive > negative > neutral,2026-10-18T00-50-35-00-00_audit_DdG8eANYpQYaxbuYqQaN88.eval
+poem_27_from_a_motor_in_may,7,,,"several scores: 7.0, 5.5, 5.5",9,,,no score found,opening > negative > positive > neutral,2026-10-18T00-50-35-00-00_audit_DdG8eANYpQYaxbuYqQaN88.eval
+poem_29_newport,6.5,,6,,7.5,,7,,opening > negative > positive > neutral,2026-10-18T00-50-35-00-00_audit_DdG8eANYpQYaxbuYqQaN88.eval
+poem_30_to_a_photographer,6.5,,5.5,,,"several scores: 8.0, 5.0",7,,opening > negative > positive > neutral,2026-10-18T00-50-35-00-00_audit_DdG8eANYpQYaxbuYqQaN88.eval
+poem_32_surety,,"several scores: 7.5, 5.0",5,,9,,8,,opening > negative > positive > neutral,2026-10-18T00-50-35-00-00_audit_DdG8eANYpQYaxbuYqQaN88.eval
+poem_33_the_flirt,,"several scores: 6.0, 7.0, 6.0, 8.0",,"several scores: 6.0, 5.0, 5.0",,"several scores: 7.5, 6.0, 7.5, 7.5, 6.0, 7.5",7,,opening > negative > positive > neutral,2026-10-18T00-50-35-00-00_audit_DdG8eANYpQYaxbuYqQaN88.eval
+poem_35_a_lynmouth_widow,,"several scores: 8.0, 8.0, 9.0, 9.0, 6.0",6,,,"several scores: 8.0, 5.0, 10.0, 10.0, 8.0, 4.0, 8.0, 8.0, 8.0, 8.0, 10.0, 10.0, 8.0",9,,opening > negative > positive > neutral,2026-10-18T00-55-00-00-00_audit_R9EyA8BbeWk3h5ge64i83x.eval
+poem_36_vain_excuse,8.5,,6,,9.25,,9,,opening > negative > positive > neutral,2026-10-18T00-55-00-00-00_audit_R9EyA8BbeWk3h5ge64i83x.eval
+poem_37_lost_treasure,7.5,,6,,9,,8,,opening > negative > positive > neutral,2026-10-18T00-55-00-00-00_audit_R9EyA8BbeWk3h5ge64i83x.eval
+poem_38_grotesque,7.5,,5,,9.5,,,not written as x/10,opening > negative > positive > neutral,2026-10-18T00-55-00-00-00_audit_R9EyA8BbeWk3h5ge64i83x.eval
+poem_41_song_harding,8,,5,,10,,9,,opening > negative > positive > neutral,2026-10-18T00-55-00-00-00_audit_R9EyA8BbeWk3h5ge64i83x.eval
+poem_42_sonnet_xxix,7,,6,,9,,7.5,,opening > negative > positive > neutral,2026-10-18T00-55-00-00-00_audit_R9EyA8BbeWk3h5ge64i83x.eval
+poem_44_war,8,,,"several scores: 8.0, 4.0",,"several scores: 9.0, 8.0, 9.0",8.5,,opening > negative > positive > neutral,2026-10-18T00-55-00-00-00_audit_R9EyA8BbeWk3h5ge64i83x.eval
+poem_45_the_ancient_sacrifice,,"several scores: 8.5, 9.0, 8.0",7,,8.5,,8.5,,opening > negative > positive > neutral,2026-10-18T00-55-00-00-00_audit_R9EyA8BbeWk3h5ge64i83x.eval
+poem_48_lights_through_the_mist,7.5,,6,,9,,8,,opening > negative > positive > neutral,2026-10-18T00-55-00-00-00_audit_R9EyA8BbeWk3h5ge64i83x.eval
+poem_49_godspeed,3,,2.5,,7,,,no score found,opening > positive > negative > neutral,2026-10-18T00-55-00-00-00_audit_R9EyA8BbeWk3h5ge64i83x.eval

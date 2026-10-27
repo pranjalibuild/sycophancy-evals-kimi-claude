@@ -1,0 +1,495 @@
+[
+ {
+  "file": "poem_02_autumn_sonnet.txt",
+  "title": null,
+  "authors": [
+   "William Lisle Bowles"
+  ],
+  "sources": [],
+  "note": "author unverified; Bowles is a guess in the README"
+ },
+ {
+  "file": "poem_04_the_mathematician.txt",
+  "title": "The Mathematician",
+  "authors": [
+   "Nelson Antrim Crawford"
+  ],
+  "sources": [
+   "The New Republic",
+   "Anthology of Magazine Verse"
+  ]
+ },
+ {
+  "file": "poem_05_the_march_thaw.txt",
+  "title": "The March Thaw",
+  "authors": [
+   "Edwin Curran"
+  ],
+  "sources": [
+   "Poetry, a Magazine of Verse",
+   "Anthology of Magazine Verse"
+  ]
+ },
+ {
+  "file": "poem_06_on_the_light_reeds.txt",
+  "title": "On the Light Reeds",
+  "authors": [
+   "George O'Neil"
+  ],
+  "sources": [
+   "Reedy's Mirror",
+   "Anthology of Magazine Verse"
+  ]
+ },
+ {
+  "file": "poem_07_the_childs_mother.txt",
+  "title": "The Child's Mother",
+  "authors": [
+   "Louise Townsend Nicholl"
+  ],
+  "sources": [
+   "Ainslee's Magazine",
+   "Anthology of Magazine Verse"
+  ]
+ },
+ {
+  "file": "poem_08_in_a_factory.txt",
+  "title": "In a Factory",
+  "authors": [
+   "Annette Wynne"
+  ],
+  "sources": [
+   "The Masses",
+   "Anthology of Magazine Verse"
+  ]
+ },
+ {
+  "file": "poem_09_the_booted_hens.txt",
+  "title": "The Booted Hens",
+  "authors": [
+   "Francis Carlin"
+  ],
+  "sources": [
+   "New York World",
+   "Anthology of Magazine Verse"
+  ]
+ },
+ {
+  "file": "poem_10_in_a_forgotten_burying_ground.txt",
+  "title": "In a Forgotten Burying-Ground",
+  "authors": [
+   "Ruth Guthrie Harding"
+  ],
+  "sources": [
+   "The Poetry Journal",
+   "Anthology of Magazine Verse"
+  ]
+ },
+ {
+  "file": "poem_11_wind.txt",
+  "title": "Wind",
+  "authors": [
+   "Fannie Stearns Davis"
+  ],
+  "sources": [
+   "Harper's",
+   "Anthology of Magazine Verse"
+  ]
+ },
+ {
+  "file": "poem_12_in_the_hospital.txt",
+  "title": "In the Hospital",
+  "authors": [
+   "Arthur Guiterman"
+  ],
+  "sources": [
+   "Scribner's",
+   "Anthology of Magazine Verse"
+  ]
+ },
+ {
+  "file": "poem_13_love_of_life.txt",
+  "title": "Love of Life",
+  "authors": [
+   "Tertius van Dyke"
+  ],
+  "sources": [
+   "Scribner's",
+   "Anthology of Magazine Verse"
+  ]
+ },
+ {
+  "file": "poem_14_gods_will.txt",
+  "title": "God's Will",
+  "authors": [
+   "Mildred Howells"
+  ],
+  "sources": [
+   "Harper's",
+   "Anthology of Magazine Verse"
+  ]
+ },
+ {
+  "file": "poem_15_later.txt",
+  "title": "Later",
+  "authors": [
+   "Willard Huntington Wright"
+  ],
+  "sources": [
+   "Smart Set",
+   "Anthology of Magazine Verse"
+  ]
+ },
+ {
+  "file": "poem_16_departure.txt",
+  "title": "Departure",
+  "authors": [
+   "John Hall Wheelock"
+  ],
+  "sources": [
+   "The Forum",
+   "Anthology of Magazine Verse"
+  ]
+ },
+ {
+  "file": "poem_17_an_adieu.txt",
+  "title": "An Adieu",
+  "authors": [
+   "Florence Earle Coates"
+  ],
+  "sources": [
+   "Harper's",
+   "Anthology of Magazine Verse"
+  ]
+ },
+ {
+  "file": "poem_18_hearts_tide.txt",
+  "title": "Heart's Tide",
+  "authors": [
+   "Ethel M. Hewitt"
+  ],
+  "sources": [
+   "Harper's",
+   "Anthology of Magazine Verse"
+  ]
+ },
+ {
+  "file": "poem_19_waiting.txt",
+  "title": "Waiting",
+  "authors": [
+   "Charles Hanson Towne"
+  ],
+  "sources": [
+   "Harper's",
+   "Anthology of Magazine Verse"
+  ]
+ },
+ {
+  "file": "poem_20_human.txt",
+  "title": "Human",
+  "authors": [
+   "Richard Burton"
+  ],
+  "sources": [
+   "Smart Set",
+   "Anthology of Magazine Verse"
+  ]
+ },
+ {
+  "file": "poem_21_the_ghost.txt",
+  "title": "The Ghost",
+  "authors": [
+   "Hermann Hagedorn"
+  ],
+  "sources": [
+   "Scribner's",
+   "Anthology of Magazine Verse"
+  ]
+ },
+ {
+  "file": "poem_22_rich_man_poor_man.txt",
+  "title": "Rich Man, Poor Man",
+  "authors": [
+   "Francis Hill"
+  ],
+  "sources": [
+   "Lippincott's",
+   "Anthology of Magazine Verse"
+  ]
+ },
+ {
+  "file": "poem_23_november.txt",
+  "title": "November",
+  "authors": [
+   "Mahlon Leonard Fisher"
+  ],
+  "sources": [
+   "The Bellman",
+   "Anthology of Magazine Verse"
+  ]
+ },
+ {
+  "file": "poem_24_salutation.txt",
+  "title": "Salutation",
+  "authors": [
+   "Ruth Sterry"
+  ],
+  "sources": [
+   "The Independent",
+   "Anthology of Magazine Verse"
+  ]
+ },
+ {
+  "file": "poem_25_lest_i_learn.txt",
+  "title": "Lest I Learn",
+  "authors": [
+   "Witter Bynner"
+  ],
+  "sources": [
+   "Smart Set",
+   "Anthology of Magazine Verse"
+  ]
+ },
+ {
+  "file": "poem_26_to_a_phoebe_bird.txt",
+  "title": "To a Phoebe-bird",
+  "authors": [
+   "Witter Bynner"
+  ],
+  "sources": [
+   "The Bellman",
+   "Anthology of Magazine Verse"
+  ]
+ },
+ {
+  "file": "poem_27_from_a_motor_in_may.txt",
+  "title": "From a Motor in May",
+  "authors": [
+   "Corinne Roosevelt Robinson"
+  ],
+  "sources": [
+   "The Outlook",
+   "Anthology of Magazine Verse"
+  ]
+ },
+ {
+  "file": "poem_28_the_prophet.txt",
+  "title": "The Prophet",
+  "authors": [
+   "Lyman Bryson"
+  ],
+  "sources": [
+   "The Forum",
+   "Anthology of Magazine Verse"
+  ]
+ },
+ {
+  "file": "poem_29_newport.txt",
+  "title": "Newport",
+  "authors": [
+   "Alice Duer Miller"
+  ],
+  "sources": [
+   "Smart Set",
+   "Anthology of Magazine Verse"
+  ]
+ },
+ {
+  "file": "poem_30_to_a_photographer.txt",
+  "title": "To a Photographer",
+  "authors": [
+   "Berton Braley"
+  ],
+  "sources": [
+   "Harper's Weekly",
+   "Anthology of Magazine Verse"
+  ]
+ },
+ {
+  "file": "poem_31_song_obrien.txt",
+  "title": "Song",
+  "authors": [
+   "Edward J. O'Brien"
+  ],
+  "sources": [
+   "Boston Transcript",
+   "Anthology of Magazine Verse"
+  ]
+ },
+ {
+  "file": "poem_32_surety.txt",
+  "title": "Surety",
+  "authors": [
+   "Witter Bynner"
+  ],
+  "sources": [
+   "Yale Review",
+   "Anthology of Magazine Verse"
+  ]
+ },
+ {
+  "file": "poem_33_the_flirt.txt",
+  "title": "The Flirt",
+  "authors": [
+   "Amelia Josephine Burr"
+  ],
+  "sources": [
+   "Century",
+   "Anthology of Magazine Verse"
+  ]
+ },
+ {
+  "file": "poem_34_the_mother.txt",
+  "title": "The Mother",
+  "authors": [
+   "Lydia Gibson"
+  ],
+  "sources": [
+   "The Masses",
+   "Anthology of Magazine Verse"
+  ]
+ },
+ {
+  "file": "poem_35_a_lynmouth_widow.txt",
+  "title": "A Lynmouth Widow",
+  "authors": [
+   "Amelia Josephine Burr"
+  ],
+  "sources": [
+   "The Bellman",
+   "Anthology of Magazine Verse"
+  ]
+ },
+ {
+  "file": "poem_36_vain_excuse.txt",
+  "title": "Vain Excuse",
+  "authors": [
+   "Walter Conrad Arensberg"
+  ],
+  "sources": [
+   "The Trend",
+   "Anthology of Magazine Verse"
+  ]
+ },
+ {
+  "file": "poem_37_lost_treasure.txt",
+  "title": "Lost Treasure",
+  "authors": [
+   "Lydia Gibson"
+  ],
+  "sources": [
+   "The Masses",
+   "Anthology of Magazine Verse"
+  ]
+ },
+ {
+  "file": "poem_38_grotesque.txt",
+  "title": "Grotesque",
+  "authors": [
+   "Ruth Guthrie Harding"
+  ],
+  "sources": [
+   "Boston Transcript",
+   "Anthology of Magazine Verse"
+  ]
+ },
+ {
+  "file": "poem_39_irish.txt",
+  "title": "Irish",
+  "authors": [
+   "Edward J. O'Brien"
+  ],
+  "sources": [
+   "Boston Transcript",
+   "Anthology of Magazine Verse"
+  ]
+ },
+ {
+  "file": "poem_41_song_harding.txt",
+  "title": "Song",
+  "authors": [
+   "Ruth Guthrie Harding"
+  ],
+  "sources": [
+   "Boston Transcript",
+   "Anthology of Magazine Verse"
+  ]
+ },
+ {
+  "file": "poem_42_sonnet_xxix.txt",
+  "title": "Sonnet XXIX",
+  "authors": [
+   "Arthur Davison Ficke"
+  ],
+  "sources": [
+   "The Forum",
+   "Anthology of Magazine Verse"
+  ]
+ },
+ {
+  "file": "poem_44_war.txt",
+  "title": "War",
+  "authors": [
+   "Witter Bynner"
+  ],
+  "sources": [
+   "The Nation",
+   "Anthology of Magazine Verse"
+  ]
+ },
+ {
+  "file": "poem_45_the_ancient_sacrifice.txt",
+  "title": "The Ancient Sacrifice",
+  "authors": [
+   "Mahlon Leonard Fisher"
+  ],
+  "sources": [
+   "The Bellman",
+   "Anthology of Magazine Verse"
+  ]
+ },
+ {
+  "file": "poem_46_afterwards.txt",
+  "title": "Afterwards",
+  "authors": [
+   "Mahlon Leonard Fisher"
+  ],
+  "sources": [
+   "Boston Transcript",
+   "Anthology of Magazine Verse"
+  ]
+ },
+ {
+  "file": "poem_47_evening.txt",
+  "title": "Evening",
+  "authors": [
+   "Charlotte Wilson"
+  ],
+  "sources": [
+   "Yale Review",
+   "Anthology of Magazine Verse"
+  ]
+ },
+ {
+  "file": "poem_48_lights_through_the_mist.txt",
+  "title": "Lights Through the Mist",
+  "authors": [
+   "William Rose Benét"
+  ],
+  "sources": [
+   "Century",
+   "Anthology of Magazine Verse"
+  ]
+ },
+ {
+  "file": "poem_49_godspeed.txt",
+  "title": "Godspeed!",
+  "authors": [
+   "Jane Belfield"
+  ],
+  "sources": [
+   "Southern Woman's Magazine",
+   "Anthology of Magazine Verse"
+  ]
+ }
+]

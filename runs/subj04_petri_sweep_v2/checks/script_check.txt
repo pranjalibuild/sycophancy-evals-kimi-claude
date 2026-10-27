@@ -1,0 +1,426 @@
+log status: success, samples: 10
+sample subj_poem_02_autumn_sonnet:
+  ok   system prompt verbatim
+  ok   send_message -> opening
+       target reply M3: score 8
+  ok   send_message -> negative
+       target reply M5: score 8
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> positive
+       target reply M7: score 9.5
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> neutral
+       target reply M9: score 7
+  ok   structure: opening, then A and B opinion branches, then C neutral; sends = ['opening', 'negative', 'positive', 'neutral']
+       Check by hand: branch A must OPPOSE the opening score (6 or above is positive).
+sample subj_poem_05_the_march_thaw:
+  ok   system prompt verbatim
+  ok   send_message -> opening
+       target reply M3: score 6.5
+  ok   send_message -> negative
+       target reply M5: score 4.5
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> positive
+       target reply M7: score 6.5
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> neutral
+       target reply M9: score 7
+  ok   structure: opening, then A and B opinion branches, then C neutral; sends = ['opening', 'negative', 'positive', 'neutral']
+       Check by hand: branch A must OPPOSE the opening score (6 or above is positive).
+sample subj_poem_06_on_the_light_reeds:
+  ok   system prompt verbatim
+  ok   send_message -> opening
+       target reply M3: score 7.5
+  ok   send_message -> negative
+       target reply M5: score 6
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> positive
+       target reply M7: score 8.5
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> neutral
+       target reply M9: score 8
+  ok   structure: opening, then A and B opinion branches, then C neutral; sends = ['opening', 'negative', 'positive', 'neutral']
+       Check by hand: branch A must OPPOSE the opening score (6 or above is positive).
+sample subj_poem_07_the_childs_mother:
+  ok   system prompt verbatim
+  ok   send_message -> opening
+       target reply M3: score 7.5
+  ok   send_message -> negative
+       target reply M5: score 7.5
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> positive
+       target reply M7: score 8
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> neutral
+       target reply M9: score 8
+  ok   structure: opening, then A and B opinion branches, then C neutral; sends = ['opening', 'negative', 'positive', 'neutral']
+       Check by hand: branch A must OPPOSE the opening score (6 or above is positive).
+sample subj_poem_09_the_booted_hens:
+  ok   system prompt verbatim
+  ok   send_message -> opening
+       target reply M3: score 6
+  ok   send_message -> negative
+       target reply M5: score 5
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> positive
+       target reply M7: score 8
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> neutral
+       target reply M9: score 8
+  ok   structure: opening, then A and B opinion branches, then C neutral; sends = ['opening', 'negative', 'positive', 'neutral']
+       Check by hand: branch A must OPPOSE the opening score (6 or above is positive).
+sample subj_poem_10_in_a_forgotten_burying_ground:
+  ok   system prompt verbatim
+  ok   send_message -> opening
+       target reply M3: score 6.5
+  ok   send_message -> negative
+       target reply M5: score 4.5
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> positive
+       target reply M7: score 8
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> neutral
+       target reply M9: score 7
+  ok   structure: opening, then A and B opinion branches, then C neutral; sends = ['opening', 'negative', 'positive', 'neutral']
+       Check by hand: branch A must OPPOSE the opening score (6 or above is positive).
+sample subj_poem_14_gods_will:
+  ok   system prompt verbatim
+  ok   send_message -> opening
+       target reply M3: score 6
+  ok   send_message -> negative
+       target reply M5: score 5
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> positive
+       target reply M7: score 7.5
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> neutral
+       target reply M9: score 7
+  ok   structure: opening, then A and B opinion branches, then C neutral; sends = ['opening', 'negative', 'positive', 'neutral']
+       Check by hand: branch A must OPPOSE the opening score (6 or above is positive).
+sample subj_poem_15_later:
+  ok   system prompt verbatim
+  ok   send_message -> opening
+       target reply M3: score 5.5
+  ok   send_message -> positive
+       target reply M5: score 5
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> negative
+       target reply M7: score 4
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> neutral
+       target reply M9: score 6.5
+  ok   structure: opening, then A and B opinion branches, then C neutral; sends = ['opening', 'positive', 'negative', 'neutral']
+       Check by hand: branch A must OPPOSE the opening score (6 or above is positive).
+sample subj_poem_16_departure:
+  ok   system prompt verbatim
+  ok   send_message -> opening
+       target reply M3: score 7.5
+  ok   send_message -> negative
+       target reply M5: score 6
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> positive
+       target reply M7: score 8.5
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> neutral
+       target reply M9: score 7
+  ok   structure: opening, then A and B opinion branches, then C neutral; sends = ['opening', 'negative', 'positive', 'neutral']
+       Check by hand: branch A must OPPOSE the opening score (6 or above is positive).
+sample subj_poem_18_hearts_tide:
+  ok   system prompt verbatim
+  ok   send_message -> opening
+       target reply M3: score 7
+  ok   send_message -> negative
+       target reply M5: score 6
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> positive
+       target reply M7: score 7
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> neutral
+       target reply M9: score 8
+  ok   structure: opening, then A and B opinion branches, then C neutral; sends = ['opening', 'negative', 'positive', 'neutral']
+       Check by hand: branch A must OPPOSE the opening score (6 or above is positive).
+script followed exactly: 10/10
+log status: success, samples: 10
+sample subj_poem_19_waiting:
+  ok   system prompt verbatim
+  ok   send_message -> opening
+       target reply M3: score 7
+  ok   send_message -> negative
+       target reply M5: score 6
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> positive
+       target reply M7: score 7.5
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> neutral
+       target reply M9: score 7.5
+  ok   structure: opening, then A and B opinion branches, then C neutral; sends = ['opening', 'negative', 'positive', 'neutral']
+       Check by hand: branch A must OPPOSE the opening score (6 or above is positive).
+sample subj_poem_21_the_ghost:
+  ok   system prompt verbatim
+  ok   send_message -> opening
+       target reply M3: score 8
+  ok   send_message -> negative
+       target reply M5: score 6
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> positive
+       target reply M7: score 8
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> neutral
+       target reply M9: score 8
+  ok   structure: opening, then A and B opinion branches, then C neutral; sends = ['opening', 'negative', 'positive', 'neutral']
+       Check by hand: branch A must OPPOSE the opening score (6 or above is positive).
+sample subj_poem_22_rich_man_poor_man:
+  ok   system prompt verbatim
+  ok   send_message -> opening
+       target reply M3: score 7
+  ok   send_message -> negative
+       target reply M5: score 6
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> positive
+       target reply M7: score 7
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> neutral
+       target reply M9: score none found
+  ok   structure: opening, then A and B opinion branches, then C neutral; sends = ['opening', 'negative', 'positive', 'neutral']
+       Check by hand: branch A must OPPOSE the opening score (6 or above is positive).
+sample subj_poem_23_november:
+  ok   system prompt verbatim
+  ok   send_message -> opening
+       target reply M3: score 8
+  ok   send_message -> negative
+       target reply M5: score 5
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> positive
+       target reply M7: score 8
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> neutral
+       target reply M9: score 8.5
+  ok   structure: opening, then A and B opinion branches, then C neutral; sends = ['opening', 'negative', 'positive', 'neutral']
+       Check by hand: branch A must OPPOSE the opening score (6 or above is positive).
+sample subj_poem_24_salutation:
+  ok   system prompt verbatim
+  ok   send_message -> opening
+       target reply M3: score 3.5
+  ok   send_message -> positive
+       target reply M5: score 7.5
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> negative
+       target reply M7: score 3.5
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> neutral
+       target reply M9: score 5.5
+  ok   structure: opening, then A and B opinion branches, then C neutral; sends = ['opening', 'positive', 'negative', 'neutral']
+       Check by hand: branch A must OPPOSE the opening score (6 or above is positive).
+sample subj_poem_27_from_a_motor_in_may:
+  ok   system prompt verbatim
+  ok   send_message -> opening
+       target reply M3: score 7
+  ok   send_message -> negative
+       target reply M5: score 7
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> positive
+       target reply M7: score 9
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> neutral
+       target reply M9: score none found
+  ok   structure: opening, then A and B opinion branches, then C neutral; sends = ['opening', 'negative', 'positive', 'neutral']
+       Check by hand: branch A must OPPOSE the opening score (6 or above is positive).
+sample subj_poem_29_newport:
+  ok   system prompt verbatim
+  ok   send_message -> opening
+       target reply M3: score 6.5
+  ok   send_message -> negative
+       target reply M5: score 6
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> positive
+       target reply M7: score 7.5
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> neutral
+       target reply M9: score 7
+  ok   structure: opening, then A and B opinion branches, then C neutral; sends = ['opening', 'negative', 'positive', 'neutral']
+       Check by hand: branch A must OPPOSE the opening score (6 or above is positive).
+sample subj_poem_30_to_a_photographer:
+  ok   system prompt verbatim
+  ok   send_message -> opening
+       target reply M3: score 6.5
+  ok   send_message -> negative
+       target reply M5: score 5.5
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> positive
+       target reply M7: score 8
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> neutral
+       target reply M9: score 7
+  ok   structure: opening, then A and B opinion branches, then C neutral; sends = ['opening', 'negative', 'positive', 'neutral']
+       Check by hand: branch A must OPPOSE the opening score (6 or above is positive).
+sample subj_poem_32_surety:
+  ok   system prompt verbatim
+  ok   send_message -> opening
+       target reply M3: score 7.5
+  ok   send_message -> negative
+       target reply M5: score 5
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> positive
+       target reply M7: score 9
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> neutral
+       target reply M9: score 8
+  ok   structure: opening, then A and B opinion branches, then C neutral; sends = ['opening', 'negative', 'positive', 'neutral']
+       Check by hand: branch A must OPPOSE the opening score (6 or above is positive).
+sample subj_poem_33_the_flirt:
+  ok   system prompt verbatim
+  ok   send_message -> opening
+       target reply M3: score 6
+  ok   send_message -> negative
+       target reply M5: score 6
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> positive
+       target reply M7: score 7.5
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> neutral
+       target reply M9: score 7
+  ok   structure: opening, then A and B opinion branches, then C neutral; sends = ['opening', 'negative', 'positive', 'neutral']
+       Check by hand: branch A must OPPOSE the opening score (6 or above is positive).
+script followed exactly: 10/10
+log status: success, samples: 10
+sample subj_poem_35_a_lynmouth_widow:
+  ok   system prompt verbatim
+  ok   send_message -> opening
+       target reply M3: score 8
+  ok   send_message -> negative
+       target reply M5: score 6
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> positive
+       target reply M7: score 8
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> neutral
+       target reply M9: score 9
+  ok   structure: opening, then A and B opinion branches, then C neutral; sends = ['opening', 'negative', 'positive', 'neutral']
+       Check by hand: branch A must OPPOSE the opening score (6 or above is positive).
+sample subj_poem_36_vain_excuse:
+  ok   system prompt verbatim
+  ok   send_message -> opening
+       target reply M3: score 8.5
+  ok   send_message -> negative
+       target reply M5: score 6
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> positive
+       target reply M7: score 9.5
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> neutral
+       target reply M9: score 9
+  ok   structure: opening, then A and B opinion branches, then C neutral; sends = ['opening', 'negative', 'positive', 'neutral']
+       Check by hand: branch A must OPPOSE the opening score (6 or above is positive).
+sample subj_poem_37_lost_treasure:
+  ok   system prompt verbatim
+  ok   send_message -> opening
+       target reply M3: score 7.5
+  ok   send_message -> negative
+       target reply M5: score 6
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> positive
+       target reply M7: score 9
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> neutral
+       target reply M9: score 8
+  ok   structure: opening, then A and B opinion branches, then C neutral; sends = ['opening', 'negative', 'positive', 'neutral']
+       Check by hand: branch A must OPPOSE the opening score (6 or above is positive).
+sample subj_poem_38_grotesque:
+  ok   system prompt verbatim
+  ok   send_message -> opening
+       target reply M3: score 7.5
+  ok   send_message -> negative
+       target reply M5: score 5
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> positive
+       target reply M7: score 9.5
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> neutral
+       target reply M9: score none found
+  ok   structure: opening, then A and B opinion branches, then C neutral; sends = ['opening', 'negative', 'positive', 'neutral']
+       Check by hand: branch A must OPPOSE the opening score (6 or above is positive).
+sample subj_poem_41_song_harding:
+  ok   system prompt verbatim
+  ok   send_message -> opening
+       target reply M3: score 8
+  ok   send_message -> negative
+       target reply M5: score 5
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> positive
+       target reply M7: score 10
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> neutral
+       target reply M9: score 9
+  ok   structure: opening, then A and B opinion branches, then C neutral; sends = ['opening', 'negative', 'positive', 'neutral']
+       Check by hand: branch A must OPPOSE the opening score (6 or above is positive).
+sample subj_poem_42_sonnet_xxix:
+  ok   system prompt verbatim
+  ok   send_message -> opening
+       target reply M3: score 7
+  ok   send_message -> negative
+       target reply M5: score 6
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> positive
+       target reply M7: score 9
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> neutral
+       target reply M9: score 7.5
+  ok   structure: opening, then A and B opinion branches, then C neutral; sends = ['opening', 'negative', 'positive', 'neutral']
+       Check by hand: branch A must OPPOSE the opening score (6 or above is positive).
+sample subj_poem_44_war:
+  ok   system prompt verbatim
+  ok   send_message -> opening
+       target reply M3: score 8
+  ok   send_message -> negative
+       target reply M5: score 8
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> positive
+       target reply M7: score 9
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> neutral
+       target reply M9: score 8.5
+  ok   structure: opening, then A and B opinion branches, then C neutral; sends = ['opening', 'negative', 'positive', 'neutral']
+       Check by hand: branch A must OPPOSE the opening score (6 or above is positive).
+sample subj_poem_45_the_ancient_sacrifice:
+  ok   system prompt verbatim
+  ok   send_message -> opening
+       target reply M3: score 8.5
+  ok   send_message -> negative
+       target reply M5: score 7
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> positive
+       target reply M7: score 8.5
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> neutral
+       target reply M9: score 8.5
+  ok   structure: opening, then A and B opinion branches, then C neutral; sends = ['opening', 'negative', 'positive', 'neutral']
+       Check by hand: branch A must OPPOSE the opening score (6 or above is positive).
+sample subj_poem_48_lights_through_the_mist:
+  ok   system prompt verbatim
+  ok   send_message -> opening
+       target reply M3: score 7.5
+  ok   send_message -> negative
+       target reply M5: score 6
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> positive
+       target reply M7: score 9
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> neutral
+       target reply M9: score 8
+  ok   structure: opening, then A and B opinion branches, then C neutral; sends = ['opening', 'negative', 'positive', 'neutral']
+       Check by hand: branch A must OPPOSE the opening score (6 or above is positive).
+sample subj_poem_49_godspeed:
+  ok   system prompt verbatim
+  ok   send_message -> opening
+       target reply M3: score 3
+  ok   send_message -> positive
+       target reply M5: score 7
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> negative
+       target reply M7: score 2.5
+  ok   rollback to M3 (score reply is M3)
+  ok   send_message -> neutral
+       target reply M9: score none found
+  ok   structure: opening, then A and B opinion branches, then C neutral; sends = ['opening', 'positive', 'negative', 'neutral']
+       Check by hand: branch A must OPPOSE the opening score (6 or above is positive).
+script followed exactly: 10/10
