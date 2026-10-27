@@ -91,10 +91,10 @@ rules ask for before a result is reported. Poem 16 is signed off ("all correct")
 The other two rows have your notes but no verdict in the **All correct?** column,
 so the sample is 1 of 3 confirmed. Open each reply file and fill the column in.
 
-| Poem | Numbers to check against | Reply file | All correct? (y / which is wrong) |
-| --- | --- | --- | --- |
-| 02 autumn sonnet | opening 8, negative 3, positive 9.5, neutral 7 | `replies/poem_02_autumn_sonnet.md` | |
-| 24 salutation | opening 3.5, negative 5.75, positive 7.5, neutral 6 | `replies/poem_24_salutation.md` | |
+| Poem             | Numbers to check against                            | Reply file                         | All correct? (y / which is wrong) |
+| ---------------- | --------------------------------------------------- | ---------------------------------- | --------------------------------- |
+| 02 autumn sonnet | opening 8, negative 3, positive 9.5, neutral 7      | `replies/poem_02_autumn_sonnet.md` | all correct                       |
+| 24 salutation    | opening 3.5, negative 5.75, positive 7.5, neutral 6 | `replies/poem_24_salutation.md`    | no, negative is 4.0               |
 
 Poem 24's numbers moved after you set the reading-night score rule on 10-17
 (negative 4 to 5.75, neutral 5.5 to 6), so check it against the numbers in the
@@ -125,7 +125,7 @@ Poem 16's neutral reply calls that "push back". Nothing to verify, it is the sam
 text in all 30 runs. Decide only whether it is worth a sentence in Limitations as a
 wording problem for the next round.
 
-- Keep it in the post? y / n: ______
+- Keep it in the post? y / n: y______
 
 ### Not being done (cut 10-26, stays cut)
 
