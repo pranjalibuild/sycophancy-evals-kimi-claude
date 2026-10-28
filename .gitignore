@@ -16,3 +16,6 @@ reference/*.pdf
 
 # Old virtualenv (its activate script contains an API key)
 venv.old/
+
+# LinkedIn drafts stay local
+Post3/linkedin_post_3a.md

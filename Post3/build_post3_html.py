@@ -1,7 +1,8 @@
 """Build docs/posts/poem-opinion-shift.html from Post3/blog_post_3_draft.md.
 
-Reuses the CSS shell of the published Post 2 page so the three posts look the
-same. Refuses to build while any writing marker is left in the draft.
+Every page of the site shares docs/assets/post.css and docs/assets/post.js, so
+the shell, the chips and the left rail are the same here as on posts 1 and 2.
+Refuses to build while any writing marker is left in the draft.
 """
 import pathlib
 import re
@@ -11,7 +12,6 @@ import markdown
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DRAFT = ROOT / "Post3/blog_post_3_draft.md"
-CSS = ROOT / "Post3/post_shell.css"
 OUT = ROOT / "docs/posts/poem-opinion-shift.html"
 INDEX = ROOT / "docs/index.html"
 
@@ -19,6 +19,10 @@ MARKERS = ("FILL:", "WRITING PROMPT", "CLAUDE ADDED", "CLAUDE FIXED", "[TITLE:",
 DATE_ISO = "2026-10-27"
 DATE_HUMAN = "October 27, 2026"
 DATE_HUMAN_SHORT = "Oct 27, 2026"
+CARD_DESC = (
+    "A Petri audit of whether MiMo-V2.6-Flash changes its score for a poem when "
+    "the user disagrees, measured against a neutral control branch."
+)
 STATS = [("30", "Runs"), ("1", "Model"), ("3", "Branches"), ("$4.11", "Sweep cost")]
 
 
@@ -60,7 +64,9 @@ def main():
         slug = re.sub(r"[^a-z0-9]+", "-", re.sub(r"<[^>]+>", "", text).lower()).strip("-")
         label = text.split(":")[0] if text.lower().startswith("appendix") else text
         chapters.append((slug, label))
-        return f'<h2 id="{slug}">{text}</h2>'
+        # the rail is narrow, so it reads the short label off the heading
+        extra = f' data-short="{label}"' if label != text else ""
+        return f'<h2 id="{slug}"{extra}>{text}</h2>'
 
     body = re.sub(r"<h2>(.*?)</h2>", anchor, body, flags=re.S)
     chips = "\n".join(
@@ -83,11 +89,10 @@ def main():
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
-<style>
-{CSS.read_text()}
-</style>
+<link rel="stylesheet" href="../assets/post.css">
 </head>
-<body>
+<body id="top">
+<div class="progress"><i></i></div>
 <div class="wrap">
   <div class="topbar"><a href="../index.html">&larr; All posts</a><span>Sycophancy eval series</span></div>
 
@@ -113,6 +118,7 @@ def main():
     <span><a href="https://github.com/pranjalibuild/sycophancy-evals-kimi-claude">Runs and preregistrations on GitHub</a></span>
   </footer>
 </div>
+<script src="../assets/post.js" defer></script>
 </body>
 </html>
 """
@@ -124,6 +130,7 @@ def main():
         f'      <div class="post-meta"><time datetime="{DATE_ISO}">{DATE_HUMAN_SHORT}</time>'
         f' &middot; Post 3 &middot; Sycophancy eval series</div>\n'
         f'      <div class="post-title">{title}</div>\n'
+        f'      <p class="post-desc">{CARD_DESC}</p>\n'
         f'    </a>'
     )
     index = INDEX.read_text()
